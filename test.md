@@ -1,5 +1,6 @@
 ---
 title: TEST PAGE
+layout: base
 ---
 
 # This is a H1
