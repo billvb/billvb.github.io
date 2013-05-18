@@ -1,3 +1,4 @@
+{% block content %}
 ---
 title: TEST PAGE
 ---
@@ -9,4 +10,4 @@ title: TEST PAGE
 * Bullet lists are also easy to create
 * One more
 
-
+{% endblock %}
