@@ -1,8 +1,9 @@
-{% include "_layout/layout.html %}
-{% block content %}
 ---
 title: TEST PAGE
 ---
+
+{% include "_layout/layout.html %}
+{% block content %}
 
 # This is a H1
 
