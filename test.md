@@ -1,3 +1,4 @@
+{% include "_layout/layout.html %}
 {% block content %}
 ---
 title: TEST PAGE
