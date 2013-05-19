@@ -1,8 +1,9 @@
-{% include "base.html" %}
 ---
 title: TEST PAGE
 layout: base
 ---
+
+{% include "base.html" %}
 
 # This is a H1
 
