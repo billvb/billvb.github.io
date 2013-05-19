@@ -1,3 +1,4 @@
+{% include "base.html" %}
 ---
 title: TEST PAGE
 layout: base
