@@ -37,22 +37,33 @@ footer, header, hgroup, menu, nav, section {
 
 menu ul {
     overflow: hidden;
+    margin-left: -20px;
 }
 
 menu ul li {
     list-style-type: none;
     float: left;
+    margin: 0;
     padding: 0;
-    margin-left: 0;
-    margin-right: 5%;
 }
 
+menu ul li a {
+    display: block;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.post_entry {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .post_entry .date{
     float: right;
     color: #666;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 7px;
+    margin-top: 17px;
     display: block;
 }
 
@@ -87,6 +98,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+b {
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
@@ -113,7 +128,7 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+  /* background: url('../images/bg_hr.png') repeat-x bottom; */
 }
 
 h3 {
@@ -138,6 +153,7 @@ p {
 
 footer p {
   color: #ccc;
+  padding-top: 20px;
   font-size: 10pt;
 }
 
@@ -272,7 +288,8 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
+  border-bottom: 1px solid #ccc;
+  /* background: url('../images/bg_hr.png') repeat-x center; */
 }
 
 table {
@@ -314,7 +331,7 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 20px 10px;
+  padding: /* 20px */ 0px 10px;
   margin: 0 auto;
 }
 
@@ -410,7 +427,7 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 #footer_wrap {
