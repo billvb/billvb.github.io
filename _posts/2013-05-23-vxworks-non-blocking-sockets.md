@@ -1,11 +1,10 @@
 ---
-title: VxWorks Non-blocking Sockets
-layout: base
+title: VxWorks Non-Blocking Sockets
+layout: post 
+summary: Lessons learned on VxWorks nonblocking I/O
 ---
 
-## VxWorks Non-Blocking Sockets
-
-*Reminder: VxWorks does support regular POSIX socket-programming, but does provides its own (relatively convenient) networking library in _sockLib.h_*
+*Reminder: VxWorks does support regular POSIX socket-programming, but does provides its own (relatively convenient) networking library in `sockLib.h`*
 
 Generally in POSIX socket programming, to set a socket to non-blocking one would generally do:
 
@@ -15,7 +14,7 @@ Generally in POSIX socket programming, to set a socket to non-blocking one would
     s = socket( ... );
     fcntl(s, F_SETFL, O_NONBLOCK, 1);
 
-However, most VxWorks versions do *not* support **fcntl()** -- one should use **ioctl()** instead. However, ensure it is the one defined in **ioLib.h** and *not* the one in **ioctl.h** (VxWorks includes both).
+However, most VxWorks versions do *not* support `fcntl()` -- one should use `ioctl()` instead. However, ensure it is the one defined in `ioLib.h` and *not* the one in `ioctl.h` (VxWorks includes both).
 
 *VxWorks*
     

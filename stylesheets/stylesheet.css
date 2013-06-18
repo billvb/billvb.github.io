@@ -58,13 +58,25 @@ menu ul li a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.post_entry .date{
-    float: right;
+
+.post_entry .date {
     color: #666;
+    float: right;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 17px;
-    display: block;
+    margin-top: 7px;
+    text-align: right;
+}
+
+.post_entry h2 {
+    margin-left: -25px;
+}
+
+table.flat, .flat tr, .flat td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
 
 ol, ul {
@@ -149,6 +161,8 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
 }
 
 footer p {
@@ -318,6 +332,11 @@ form {
 img {
   width: 100%;
   max-width: 100%;
+}
+
+
+.resume_section h2 {
+  margin-left: -25px;
 }
 
 /*******************************************************************************

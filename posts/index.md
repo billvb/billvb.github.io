@@ -3,28 +3,22 @@ title: Posts
 layout: base
 ---
 
-<style>
-table {
- border: 0;
- padding: 0;
- margin: 0;
-}
-td, tr {
- border: 0;
- margin: 0;
- padding: 0;
-}
-</style>
-<table>
+<h2>Posts</h2>
+<table class="flat">
 {% for post in site.posts %}
-<tr><td><b>{{ post.date | date_to_string }}</b></td><td>&nbsp;&raquo;&nbsp;<a href="#{{post.date}}">{{ post.title }}</a></td></tr>
+<tr>
+<td><b>{{ post.date | date_to_string }}</b></td>
+<td>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></td>
+</tr>
 {% endfor %}
 </table>
-<br>
+<br />
+<hr />
 {% for post in site.posts %}
-<a name="{{ post.date }}"> </a>
 <div class="post_entry">
 <span class="date">{{ post.date | date_to_string }}</span>
+
+<h2>{{ post.title }}</h2>
 
 {{ post.content }}
 
