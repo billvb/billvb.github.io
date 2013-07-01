@@ -23,8 +23,8 @@ function emptyFunc(data) {}
 $(document).ready(function () {
     $.ajax({
         dataType: 'json',
-        url: 'http://cv.billvb.com/log?page=' + window.location + '&' + 
-             page_referrer=' + document.referrer + 
+        url: 'http://cv.billvb.com/log?page=' + window.location + 
+             '&page_referrer=' + document.referrer + 
              '&log_for=billvb.github.io&callback=?'
     }).done( function (data) {} );
 });
