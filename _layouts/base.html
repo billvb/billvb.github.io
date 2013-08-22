@@ -1,22 +1,48 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }} | billvb.github.io</title>
     
-<meta charset='utf-8' />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-<meta name="description" content="billvb.github.io : " />
-
-<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
-
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-
-<title>{{ page.title }} | billvb.github.io</title>
-
-</head>
-
-<body>
-<script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 id="bvb-title"><span class="bvb-main">billvb</span>.github.io</h1>
+        <p id="bvb-name">Bill Van Besien</p>
+        
+        <!--
+        <ul>
+          <li><a href="https://github.com/orderedlist/minimal/zipballmus/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+        -->
+        <hr />
+        <h3>Site Menu</h3>
+        <div class="bvb-menu">
+        <a href="/">Home</a>
+        <a href="/resume">Resume</a>
+        <a href="/info">More Info</a>
+        <a href="/misc">Misc Projects</a>
+        </div>
+      </header>
+      <section>
+      {{ content }}
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages.<br />Theme by <a href="https://github.com/orderedlist">orderedlist</a>. (Thanks!)</small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
 <script>
 function emptyFunc(data) {}
 
@@ -29,46 +55,6 @@ $(document).ready(function () {
     }).done( function (data) {} );
 });
 </script>
-<!-- HEADER -->
-<div id="header_wrap" class="outer">
-<header class="inner">
-<!--
-<a id="forkme_banner" href="https://github.com/billvb">View on GitHub</a>
--->
-
-<h1 id="project_title"><span id="title_first_part">billvb.</span><span id="title_second_part">github.io</span></h1>
-<h2 id="project_tagline">Bill Van Besien</h2>
-
-<menu>
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/resume/">Resume</a></li>
-    <li><a href="/info">More Info</a></li>
-    <li><a href="/posts/">Posts</a></li>
-    <li><a href="/misc">Misc</a></li>
-</ul>
-</menu>
-<hr />
-</header>
-</div>
-
-
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-<section id="main_content" class="inner">
-
-{{ content }}
-
-</section>
-</div>
-
-
-<!-- FOOTER  -->
-<div id="footer_wrap" class="outer">
-<footer class="inner">
-<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-</footer>
-</div>
-
-</body>
+  </body>
 </html>
+

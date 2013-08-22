@@ -11,9 +11,3 @@ On one hand I work on mission-critical software systems, on the other I'm still 
 
 My e-mail address is [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
 
-## Posts
-<table class="flat">
-{% for post in site.posts %}
-<tr><td><b>{{ post.date | date_to_string }}</b></td><td>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></td></tr>
-{% endfor %}
-</table>
