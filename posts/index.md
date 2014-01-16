@@ -7,8 +7,8 @@ layout: base
 <table class="flat">
 {% for post in site.posts %}
 <tr>
-<td><b>{{ post.date | date_to_string }}</b></td>
-<td>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></td>
+<td><b>&raquo; {{ post.date | date_to_string }}</b></td>
+<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 </tr>
 {% endfor %}
 </table>
