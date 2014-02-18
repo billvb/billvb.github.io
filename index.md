@@ -3,11 +3,16 @@ title: Home
 layout: base
 ---
 
-I do the bulk of my work these days on the autonomy flight software for NASA's Solar Probe mission at JHUAPL. My secondary pursuit at the lab is in cyber security, specifically concerns relevant to spaceflight and operations.
 
-In the past I've been involved with DTN as it applies to space networks (the "Interplanetary Internet"), and recently I served a stint on the Mission Operations team for the RBSP/VAP mission.
+I spend most of my time in the flight software group at the Johns Hopkins University Applied Physics Lab, where I work on a range of projects involving spaceflight cyber security, autonomous fault-management spacecraft systems, and enterprise process-engineering software.  
 
-On one hand I work on mission-critical software systems, on the other I'm still a hacker a heart: through some personal projects I've gleaned substantial expertise in Scala, Django, jQuery and a slew of other web technologies.
+Over the past couple years I was involved with DTN as it applies to space networks (the "Interplanetary Internet"), and last spring served as a flight controller in the Mission Operations team for the NASA Van Allen Probes mission.
 
-My e-mail address is [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
+Recently I took up a position on a part time basis with Skyline Innovations, a renewable energy startup located in downtown DC, where I advise in the design and development of their software infrastructure.
+
+<hr />
+
+The goal of this website is to serve as a wrapper to my resume, and be a point of visibility for potential colleages, clients, or partners to familiarize themselves with my work and experience.
+
+Bill Van Besien &middot; [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
 

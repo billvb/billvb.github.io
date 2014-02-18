@@ -281,3 +281,25 @@ footer {
 .bvb-menu a:hover {
     background-color: #f4f4f4;
 }
+
+.resume_section {
+    overflow: hidden;
+}
+
+.resume_section p {
+    text-align: justify;
+}
+
+#resume_header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 26px;
+}
+
+#resume_header h1, #resume_header p {
+    margin-bottom: 0.5em;
+}
+
+#resume_header #contact {
+    float: right;
+    text-align: right;
+}

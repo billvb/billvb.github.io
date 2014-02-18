@@ -334,6 +334,10 @@ img {
   max-width: 100%;
 }
 
+#resume_header h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 .resume_section h2 {
   margin-left: -25px;
