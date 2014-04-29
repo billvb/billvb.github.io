@@ -2,8 +2,7 @@
 title: Resume
 layout: base
 ---
-
-[View full-page, printable, with contact information](/resume/resume.html)
+<a href="/resume/resume.html">View full-page, printable, with contact information</a>
 
 <style>
 #resume_header {

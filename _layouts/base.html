@@ -1,59 +1,64 @@
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }} | billvb.github.io</title>
-    
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 id="bvb-title"><span class="bvb-main">billvb</span>.github.io</h1>
-        <p id="bvb-name">Bill Van Besien</p>
-        
-        <!--
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipballmus/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
-        -->
-        <hr />
-        <div class="bvb-menu">
-        <a href="/">&raquo; Home</a>
-        <a href="/resume">&raquo; Resume</a>
-        <a href="/info">&raquo; More Info</a>
-        <a href="/misc">&raquo; Misc Projects</a>
-        </div>
-      </header>
-      <section>
-      {{ content }}
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages.<br />Theme by <a href="https://github.com/orderedlist">orderedlist</a>. (Thanks!)</small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-<script>
-function emptyFunc(data) {}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-$(document).ready(function () {
-    $.ajax({
-        dataType: 'json',
-        url: 'http://cv.billvb.com/log?page=' + window.location + 
-             '&page_referrer=' + document.referrer + 
-             '&log_for=billvb.github.io&callback=?'
-    }).done( function (data) {} );
-});
-</script>
+    <title>{{ page.title }} - billvb.github.io</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/stylesheets/billvb.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+  </head>
+
+  <style>
+    div.page-header {
+        border-bottom-width: 0px;
+    }
+  </style>
+
+
+  <body>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>billvb.github.io</h1>
+        <p class="lead">Bill Van Besien</p>
+        <ul class="nav nav-tabs">
+            <li {% if page.title == "Home" %}class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="/resume">Resume</a></li>
+            <li {% if page.title == "Projects" %}class="active"{% endif %} class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/projects#space-cyber">Space Cyber Security</a></li>
+                    <li><a href="/projects#fault-management">Spacecraft Fault Management</a></li>
+                    <li><a href="/projects#skyline-pv">PV Power Metering</a></li>
+                    <li><a href="/projects#cfe-fsw">Spacecraft Flight Software Architecture</a></li>
+                    <li><a href="/projects#dtn">Delay Tolerant Networking</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-md-8 billvb-content">{{ content }}</div>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
-

@@ -3,16 +3,16 @@ title: Home
 layout: base
 ---
 
+I am a software engineer in the flight software group at the Johns Hopkins University Applied Physics Lab located outside of Washington, DC. My current projects involve exploring the vulnerabilities of spacecraft to cyber attacks, as well as advancing a model-based approach to spacecraft and UAV fault-management systems. 
 
-I spend most of my time in the flight software group at the Johns Hopkins University Applied Physics Lab, where I work on a range of projects involving spaceflight cyber security, autonomous fault-management spacecraft systems, and enterprise process-engineering software.  
+Over the past couple years I was involved with DTN as it applies to space networks &mdash; the "Interplanetary Internet" &mdash; and last Fall served as a flight controller during the launch and commissioning of the NASA Van Allen Probes mission.
 
-Over the past couple years I was involved with DTN as it applies to space networks (the "Interplanetary Internet"), and last spring served as a flight controller in the Mission Operations team for the NASA Van Allen Probes mission.
-
-Recently I took up a position on a part time basis with Skyline Innovations, a renewable energy startup located in downtown DC, where I advise in the design and development of their software infrastructure.
+Recently I started working on a part-time basis with Skyline Innovations, a solar energy startup based in downtown DC.
+Specifically, I am designing and implementing a hardware-software system necessary for enabling a new line of business for the company that remotely and reliably measures power-generation from solar installations.
 
 <hr />
 
-The goal of this website is to serve as a wrapper to my resume, and be a point of visibility for potential colleages, clients, or partners to familiarize themselves with my work and experience.
+The best way to reach me is through e-mail.
 
 Bill Van Besien &middot; [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
 
