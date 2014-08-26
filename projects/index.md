@@ -5,7 +5,7 @@ layout: base
 
 ## More Information
 
-This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. Please pardon the dust; *I add more information when I have the time*.
+This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. Please pardon the dust; I add more information when I have the time.
 
 ### Space Cyber Security
 
@@ -24,10 +24,6 @@ My presentation "Investigating Model Based Autonomy for Solar Probe Plus" from t
 
 Note: "Autonomy" refers to the capability of the spacecraft to react and recover from on-board faults that usually occur while it is out of contact with the Earth.
 
-
-### Remote PV Power Metering at Skyline
-
-*Please see the synopsis on the home page summarizing this work. Once it is completed, I'll give a longer description of it here*
 
 
 ### NASA cFE Flight Software Architecture

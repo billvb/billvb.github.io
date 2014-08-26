@@ -16,27 +16,83 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+p {
+    max-width: 36em;
+    font-size: 13pt;
+    padding-bottom: 5px;
+    color: #333;
+}
+
 #site-title {
-    color: #ccc;
+    color: #aaa;
 }
 
 #pages-menu {
     margin-left: -14px;
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:hover,
-.nav-pills>li.active>a:focus {
-    background-color: #fff;
-    color: #428bca;
-    border: 0px solid #90bee4;
-    border-bottom: 1px solid #90bee4;
+
+#interesting #pages-menu {
+    margin-left: 75px;
+    padding-left: 12px;
+}
+
+.nav-pills>li>a {
+    border: 1px solid transparent;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px;
 }
 
 .nav-pills>li>a:hover,
 .nav-pills>li>a:focus {
     background-color: #fff;
     color: #428bca;
-    border: 0px solid #90bee4;
-    border-bottom: 1px solid #aaa;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    background-color: transparent;
+    color: #428bca;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+#interesting {
+    overflow: hidden;
+}
+
+#interesting #decal {
+    width: 74px;
+    height: 74px;
+    border: 1px solid #ffbd6d;
+    background-color: #ffb56d;
+    border-radius: 15px;
+    float: left;
+}
+
+#interesting #heading #title {
+    padding-left: 15px;
+    margin-left: 75px;
+    vertical-align: middle;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+#interesting #heading #title h1 {
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+}
+
+#interesting #heading #title p {
+    margin: 0;
+    padding: 0;
+    text-decoration: italic;
+    font-size: 11pt;
+    font-color: #666;
 }
