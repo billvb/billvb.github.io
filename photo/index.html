@@ -3,6 +3,11 @@ title: Photo
 layout: base
 ---
 
+<div class="swiper-menu">
+    <a id="go-prev" class="btn btn-default btn-sm">&laquo; Prev</a>
+    (Swipe or Drag)
+    <a  class="btn btn-default btn-sm" id="go-next">Next &raquo;</a>
+</div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
 
@@ -65,6 +70,7 @@ layout: base
     <h4>{{ post.date | date_to_string }}</h4>
     <h3>{{ post.title }}</h4>
     <img src="{{ post.thumbnail }}" />
+    <br />
     <a href="{{ post.url }}">Read post &raquo;</a>
 </div>
 {% endfor %}
@@ -87,4 +93,13 @@ function size_slider() {
 
 $(window).resize(size_slider);
 $(window).load(size_slider);
+
+$('#go-prev').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipePrev()
+        })
+$('#go-next').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipeNext()
+        })
 </script>
