@@ -9,6 +9,10 @@ layout: base
 <tr>
 <td><b>&raquo; {{ post.date | date_to_string }}</b></td>
 <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+<td>
+<img src="{{post.thumbnail}}" style="width: 100px;" />
+</td>
+<td>cat</td>
 </tr>
 {% endfor %}
 </table>
@@ -19,6 +23,8 @@ layout: base
 <span class="date">{{ post.date | date_to_string }}</span>
 
 <h2>{{ post.title }}</h2>
+
+
 
 {{ post.content }}
 

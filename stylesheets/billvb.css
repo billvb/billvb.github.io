@@ -151,12 +151,10 @@ p {
   height: 30px;
 }
 .swiper-container {
-  width: 1000px;
-  height: 500px;
 }
 .content-slide {
   text-align: center;
-  padding: 0px;
+  padding: auto;
   color: #fff;
 }
 .title {
@@ -190,4 +188,33 @@ p {
 .display-img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.content-slide p {
+    text-align: center;
+    margin-top: -30px;
+    width: 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.swiper-container, .swiper-slide {
+    width: 1200px;
+    height: 600px;
+}
+
+.entry-thumb {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.entry-thumb img {
+    max-height: 200px;
+    display: block;
+}
+
+.entry-thumb a {
+    display: block;
 }

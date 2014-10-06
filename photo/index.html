@@ -5,65 +5,70 @@ layout: base
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
-            </div>
-        </div>
 
         <div class="swiper-slide">
             <div class="content-slide">
                 <img class="display-img" src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg" />
+                <p>Chianti Countryside</p>
             </div>
         </div>
 
         <div class="swiper-slide">
             <div class="content-slide">
+                <img class="display-img" src='http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg'>
+                <p>Peru</p>
+            </div>
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="content-slide">
+                <img class="display-img" src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
+                <p>Tel Aviv</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="content-slide">
+                <img class="display-img" src="http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg">
+                <p>Doi Intanon, in the north of Thailand</p>
+            </div>
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="content-slide">
                 <img class="display-img" src="https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg" />
+                <p>Summer, Lutherville, Maryland.</p>
             </div>
         </div>
         
         <div class="swiper-slide">
             <div class="content-slide">
                 <img class="display-img" src="https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" />
+                <p>Amsterdam</p>
             </div>
         </div>
         
         <div class="swiper-slide">
             <div class="content-slide">
                 <img class="display-img" src="https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg" />
+                <p>Autumn, Greenspring Valley, Maryland.</p>
             </div>
         </div>
     </div>
 </div>
 
-<h2>Posts</h2>
+<h2 style="text-align: center;">Posts</h2>
 
-<table class="flat">
-    {% for post in site.posts %}
-    <tr>
-        <td><b>&raquo; {{ post.date | date_to_string }}</b></td>
-        <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-    </tr>
-    {% endfor %}
-</table>
-<br />
-
-<hr />
 
 {% for post in site.posts %}
-<div class="post_entry">
-    <span class="date">{{ post.date | date_to_string }}</span>
-    <h2>{{ post.title }}</h2>
-
-    {{ post.content }}
-
-    <p>
-        <a href="{{ post.url }}">[ permalink ]</a> 
-    </p>
-
+<div class="entry-thumb">
+    <h4>{{ post.date | date_to_string }}</h4>
+    <h3>{{ post.title }}</h4>
+    <img src="{{ post.thumbnail }}" />
+    <a href="{{ post.url }}">Read post &raquo;</a>
 </div>
 {% endfor %}
+<br />
 
 
 <script src="/javascripts/idangerous.swiper.min.js"></script>
@@ -72,4 +77,14 @@ var mySwiper = new Swiper('.swiper-container',{
 loop:true,
 grabCursor: true
 });
+
+function size_slider() {
+    $('.swiper-container').css('width', ($('.billvb-content').width() * 0.90) + 'px');
+    $('.swiper-container').css('height', ($(this).height() * 0.66) + 'px');
+    mySwiper.resizeFix(true);
+    mySwiper.reInit();
+}
+
+$(window).resize(size_slider);
+$(window).load(size_slider);
 </script>
