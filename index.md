@@ -3,6 +3,7 @@ title: Home
 layout: base
 ---
 
+<img id="my-photo" src="/images/BB-65-crop.jpg" />
 I am a software developer near Logan Circle in downtown DC.
 
 I split my time between **Nextility**, a rapidly-growing solar energy startup located in DC, and the spacecraft flight software group at the Johns Hopkins University Applied Physics Lab (**JHUAPL**).
