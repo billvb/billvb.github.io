@@ -21,6 +21,7 @@ p {
     font-size: 13pt;
     padding-bottom: 5px;
     color: #333;
+    text-align: left;
 }
 
 #site-title {
@@ -229,5 +230,5 @@ p {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
-    max-width: 180px;
+    max-width: 140px;
 }
