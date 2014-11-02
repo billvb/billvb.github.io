@@ -156,6 +156,7 @@ p {
 .content-slide {
   text-align: center;
   padding: auto;
+  height: 100%;
   color: #fff;
 }
 .title {
