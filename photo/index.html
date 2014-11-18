@@ -1,67 +1,11 @@
 ---
 title: Photo
-layout: base
+layout: photo_bs
 ---
 
-<div class="swiper-menu">
-    <a id="go-prev" class="btn btn-sm">&laquo; Prev</a>
-    (Swipe or Drag)
-    <a  class="btn btn-sm" id="go-next">Next &raquo;</a>
-</div>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
+<img id="debut-img" src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg">
 
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg" />
-                <p>Chianti Countryside</p>
-            </div>
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg" />
-                <p>Autumn, Greenspring Valley, Maryland.</p>
-            </div>
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg" />
-                <p>Summer, Lutherville, Maryland.</p>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src='http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg'>
-                <p>Peru</p>
-            </div>
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
-                <p>Tel Aviv</p>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg">
-                <p>Doi Intanon, in the north of Thailand</p>
-            </div>
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="content-slide">
-                <img class="display-img" src="https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" />
-                <p>Amsterdam</p>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!-- 
 <h2 style="text-align: center;">Posts</h2>
 
 
@@ -75,31 +19,42 @@ layout: base
 </div>
 {% endfor %}
 <br />
-
-
-<script src="/javascripts/idangerous.swiper.min.js"></script>
+-->
 <script>
-var mySwiper = new Swiper('.swiper-container',{
-loop:true,
-grabCursor: true
-});
 
-function size_slider() {
-    $('.swiper-container').css('width', ($('.billvb-content').width() * 0.90) + 'px');
-    $('.swiper-container').css('height', ($(this).height() * 0.66) + 'px');
-    mySwiper.resizeFix(true);
-    mySwiper.reInit();
+$(document).ready(debutImageSize);
+
+function debutImageSize() {
+    $('#debut-img').css('max-height', $(window).height() + 'px');
+    //$('#debut-img').css('max-width', $(window).width() + 'px');
+    //$('#debut-img').css('height', $(window).height() + 'px');
 }
 
-$(window).resize(size_slider);
-$(window).load(size_slider);
+var debutImageIndex = 1;
+var debutImages = [
+    "https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg",
+    "https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg",
+    "https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg",
+    "http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg",
+    "https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg",
+    "http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg",
+    "https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" ];
 
-$('#go-prev').on('click', function(e){
-        e.preventDefault()
-        mySwiper.swipePrev()
-        })
-$('#go-next').on('click', function(e){
-        e.preventDefault()
-        mySwiper.swipeNext()
-        })
+function changeDebutImage() {
+    var image = $("#debut-img");
+    image.attr('src', debutImages[debutImageIndex]);
+    debutImageIndex++;
+    debutImageIndex %= debutImages.length;
+    /*
+    image.fadeOut('slow', function () {
+            image.attr('src', debutImages[debutImageIndex]);
+            image.fadeIn('slow');
+            debutImageIndex ++;
+            debutImageIndex %= debutImages.length;
+            });
+            */
+}
+
+setInterval(changeDebutImage, 5000);
+
 </script>

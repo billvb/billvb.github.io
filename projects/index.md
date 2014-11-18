@@ -3,6 +3,19 @@ title: Projects
 layout: base
 ---
 
+## Technical Posts
+
+{% for post in site.posts %}
+{% if post.tags contains "tech" %}
+<p>
+    <strong><a href="{{ post.url }}">{{ post.title }}</a></strong><br />
+    {{ post.date | date: "%-d %B %Y" }}
+</p>
+{% endif %}
+{% endfor %}
+
+<hr />
+
 ## More Information
 
 This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. Please pardon the dust; I add more information when I have the time.

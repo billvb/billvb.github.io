@@ -2,6 +2,7 @@
 title: VxWorks Non-Blocking Sockets
 layout: post 
 summary: Lessons learned on VxWorks nonblocking I/O
+tags: tech
 ---
 
 *Reminder: VxWorks does support regular POSIX socket-programming, but does provides its own (relatively convenient) networking library in `sockLib.h`*
