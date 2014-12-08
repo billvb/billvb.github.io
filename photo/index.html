@@ -1,15 +1,13 @@
 ---
 title: Photo
-layout: photo_bs
+subTitle: billvb/photography
+layout: photo-default
+photo_home: true
 ---
 
-<img id="debut-img" src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg">
-
-<!-- 
-<h2 style="text-align: center;">Posts</h2>
-
-
+<!--
 {% for post in site.posts %}
+{% if post.thumbnail %}
 <div class="entry-thumb">
     <h4>{{ post.date | date_to_string }}</h4>
     <h3>{{ post.title }}</h4>
@@ -17,44 +15,17 @@ layout: photo_bs
     <br />
     <a href="{{ post.url }}">Read post &raquo;</a>
 </div>
+{% endif %}
 {% endfor %}
 <br />
 -->
-<script>
+<ul class="bxslider">
+    <li><img src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg" title="Chianti, Italy"/></li>
+    <li><img src="https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg" title="Greenspring Valley"/></li>
+    <li><img src="https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg" title="Lutherville, MD"/></li>
+    <li><img src="http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg" title="Peru"/></li>
+    <li><img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" "Tel Aviv"/></li>
+    <li><img src="http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg" title="Doi Intanon, Thailand"/></li>
+    <li><img src="https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" title="Amsterdam"/></li>
+</ul>
 
-$(document).ready(debutImageSize);
-
-function debutImageSize() {
-    $('#debut-img').css('max-height', $(window).height() + 'px');
-    //$('#debut-img').css('max-width', $(window).width() + 'px');
-    //$('#debut-img').css('height', $(window).height() + 'px');
-}
-
-var debutImageIndex = 1;
-var debutImages = [
-    "https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg",
-    "https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg",
-    "https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg",
-    "http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg",
-    "https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg",
-    "http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg",
-    "https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" ];
-
-function changeDebutImage() {
-    var image = $("#debut-img");
-    image.attr('src', debutImages[debutImageIndex]);
-    debutImageIndex++;
-    debutImageIndex %= debutImages.length;
-    /*
-    image.fadeOut('slow', function () {
-            image.attr('src', debutImages[debutImageIndex]);
-            image.fadeIn('slow');
-            debutImageIndex ++;
-            debutImageIndex %= debutImages.length;
-            });
-            */
-}
-
-setInterval(changeDebutImage, 5000);
-
-</script>
