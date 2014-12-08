@@ -1,6 +1,6 @@
 ---
 title: Israel and the Territories
-layout: post
+layout: photo-default
 thumbnail: https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg
 ---
 

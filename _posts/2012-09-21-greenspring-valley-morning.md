@@ -1,6 +1,6 @@
 ---
 title: Greenspring Valley Morning
-layout: photo
+layout: photo-default
 thumbnail: https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg 
 ---
 

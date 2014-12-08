@@ -1,0 +1,78 @@
+---
+title: Albums
+subTitle: 
+layout: photo-default
+---
+
+<script>
+$(document).ready(function() {
+        $('.intro-header').css({
+            background: 'url(https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg) no-repeat center center',
+            'background-size': 'cover'
+        });
+    console.log($('.intro-header'));
+});
+</script>
+
+<!-- Page Content -->
+{% for post in site.posts reversed %}
+{% if post.thumbnail %}
+{% comment %}{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}{% endcomment %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <nav>
+                        <ul class="pager">
+                            <li><a href="{{ post.url }}">View Album</a></li>
+                        </ul>
+                    </nav>
+                    {{ post.description }}
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="{{ post.thumbnail }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <nav>
+                        <ul class="pager">
+                            <li><a href="{{ post.url }}">View Album</a></li>
+                        </ul>
+                    </nav>
+                    {{ post.description }}
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="{{ post.thumbnail }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endif %}
+{% endfor %}
