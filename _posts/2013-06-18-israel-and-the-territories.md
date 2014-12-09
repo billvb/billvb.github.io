@@ -4,6 +4,8 @@ layout: photo-default
 thumbnail: https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg
 ---
 
+## Israel and the Territories
+
 We started three days in Amsterdam.
 
 <img src="https://farm3.staticflickr.com/2863/9012444114_84ce6f928b_b_d.jpg">

@@ -24,12 +24,14 @@
             });
         </script>
         <div class="container">
-            <div class="col-lg-12">
+            <div class="col-lg-12 billvb-content">
                 {{ content }}
             </div>
         </div>
         {% else %}
-        {{ content }}
+        <div class="billvb-basic">
+            {{ content }}
+        </div>
         {% endif %}
 
 		{% include footer.html %}

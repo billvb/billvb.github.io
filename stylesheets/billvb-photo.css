@@ -1,5 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700);
 
-
-.container img {
+.billvb-content img {
     max-width: 100%;
+}
+
+.billvb-content p {
+    font-weight: 400;
+    font: 14pt/1.5 Merriweather;
+    color: #555;
+}
+
+.billvb-content h1,
+.billvb-content h2{
+    padding-top: 2em;
+    padding-bottom: 0.75em;
+}
+
+/* ----- */
+
+.billvb-basic p {
+    font-weight: 400;
+    font: 13pt/1.5 Merriweather;
+    color: #555;
 }
