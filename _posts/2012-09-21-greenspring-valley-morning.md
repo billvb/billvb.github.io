@@ -2,6 +2,7 @@
 title: Greenspring Valley Morning
 layout: photo-default
 thumbnail: https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg 
+thumbnail_sm: https://farm6.staticflickr.com/5616/15784049325_5916e64d32_z_d.jpg
 ---
 
 This past Fall, I have been working on the mission operations team during the comissioning phase of the RBSP mission.
@@ -27,7 +28,8 @@ It had rained overnight, and the mist was rising over the valley as the sun peak
 <script>
     Galleria.loadTheme('/javascripts/galleria-themes/classic/galleria.classic.js');
     Galleria.configure({
-        lightbox: true
+        lightbox: true,
+        height: 0.75
     });
     Galleria.run('.galleria');
 </script>

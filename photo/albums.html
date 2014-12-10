@@ -36,7 +36,7 @@ $(document).ready(function() {
                     {{ post.description }}
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="{{ post.thumbnail }}" alt="">
+                    <img class="img-responsive" src="{{ post.thumbnail_sm }}" alt="">
                 </div>
             </div>
 
@@ -56,15 +56,15 @@ $(document).ready(function() {
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="billvb-light">{{ post.description }}</div>
                     <nav>
                         <ul class="pager">
                             <li><a href="{{ post.url }}">View Album</a></li>
                         </ul>
                     </nav>
-                    {{ post.description }}
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="{{ post.thumbnail }}" alt="">
+                    <img class="img-responsive" src="{{ post.thumbnail_sm }}" alt="">
                 </div>
             </div>
 

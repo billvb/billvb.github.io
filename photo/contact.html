@@ -19,11 +19,73 @@ $(document).ready(function() {
 <div class="container">
     <div class="col-sm-6">
         <h2>Getting in touch</h2>
-        <p>Text.</p>
+        <p>Don't hesitate to drop me a line!</p>
     </div>
     <div class="col-sm-6">
-        <h2>Contact Form</h2>
+        <h2>Contact</h2>
+        <form class="form-horizontal" id="message-form">
+            <fieldset>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="user-email" name="user-email" type="text" placeholder="Your E-mail Address" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="user-name" name="user-name" type="text" placeholder="Your Name" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <div class="col-md-6">                     
+                        <textarea class="form-control" id="user-message" name="user-message" required=""></textarea>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <button id="form-submit-button" name="form-submit-button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
     </div>
 </div>
+
+<script>
+    var clear_to_submit = true;
+
+    $('#form-submit-button').click( function(e) {
+        e.preventDefault();
+
+        if (!clear_to_submit) {
+            console.log("Already submitted form once.");
+        }
+
+        $.post("http://dev.billvb.com:90/photo-contact", {
+                "user-name": $('#user-name').val(),
+                "user-email": $('#user-email').val(),
+                "user-message": $('#user-message').val()
+                })
+            .done(function (succ) {
+                clear_to_submit = false;
+                $('#message-form').html('<p class="alert alert-info">Got it, thanks!</p>');
+            })
+            .fail(function (err) {
+                console.log('Cannot submit...');
+                console.log(err);
+                $('#message-form').html('<p class="alert alert-danger">Sorry, this is not working. Just email me dog@catstein.com</p>');
+            });
+    });
+</script>
 
 <hr />

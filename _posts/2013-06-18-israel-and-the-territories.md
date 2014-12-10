@@ -2,6 +2,7 @@
 title: Israel and the Territories
 layout: photo-default
 thumbnail: https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg
+thumbnail_sm: https://farm9.staticflickr.com/8264/9011266055_05291e2009_z_d.jpg
 ---
 
 ## Israel and the Territories
