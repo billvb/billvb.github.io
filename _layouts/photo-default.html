@@ -35,5 +35,12 @@
         {% endif %}
 
 		{% include footer.html %}
+
+        <script>
+        $.post("http://dev.billvb.com:90/log",
+               {site: "photo",
+                page: $(location).attr('href'),
+                referrer: document.referrer});
+        </script>
 	</body>
 </html>
