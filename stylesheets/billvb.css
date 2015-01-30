@@ -4,21 +4,24 @@
 
 body {
     /*font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font: 12pt/1.5 Merriweather;*/
     font: 12pt/1.5 Merriweather;
     color:#333; /* was 777 */
     font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* xfont-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /*font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 
-    color:#222; /* was 777 */
+    color:#777; /* was 777 */
     font-weight: 700;
 }
 
 p {
-    max-width: 36em;
-    font-size: 13pt;
+    max-width: 700px; /*36em;*/
+    font-size: 12pt;
+    line-height: 170%;
+    letter-spacing: 0.01rem;
     padding-bottom: 5px;
     color: #333;
     text-align: left;
