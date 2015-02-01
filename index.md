@@ -12,5 +12,5 @@ Much of my work at the lab involves research and development of spacecraft and U
 
 <img id="my-photo" src="/images/BB-10.jpg" />
 
-<br /><br />
+<br />
 The best way for one to reach me is through e-mail: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
