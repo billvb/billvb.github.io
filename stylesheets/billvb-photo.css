@@ -29,3 +29,22 @@
     font-size: 13pt;
     color: #555;
 }
+
+
+.album-intro {
+    text-align: center;
+}
+
+.album-intro h2 {
+    text-align: center;
+}
+
+.album-intro .thumbnail {
+    text-align: center;
+    border: none;
+}
+
+.album-intro .thumbnail img {
+    max-height: 220px;
+}
+

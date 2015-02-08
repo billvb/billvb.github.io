@@ -17,62 +17,16 @@ $(document).ready(function() {
 <!-- Page Content -->
 {% for post in site.posts reversed %}
 {% if post.thumbnail %}
-{% comment %}{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}{% endcomment %}
-    {% if thecycle == 'odd' %}
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <nav>
-                        <ul class="pager">
-                            <li><a href="{{ post.url }}">View Album</a></li>
-                        </ul>
-                    </nav>
-                    {{ post.description }}
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="{{ post.thumbnail_sm }}" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    {% else %}
-
     <div class="content-section-b">
-
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                <div class="col-lg-6 col-lg-offset-3 album-intro">
                     <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="billvb-light">{{ post.description }}</div>
-                    <nav>
-                        <ul class="pager">
-                            <li><a href="{{ post.url }}">View Album</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="{{ post.thumbnail_sm }}" alt="">
+                    <div class="billvb-light">{{ post.description}}</div>
+                    <div class="thumbnail"><a href="{{ post.url }}"><img src="{{ post.thumbnail_sm }}" alt=""></a></div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-b -->
-    {% endif %}
 {% endif %}
 {% endfor %}

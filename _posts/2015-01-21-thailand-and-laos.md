@@ -3,7 +3,7 @@ title: Thailand and Laos
 layout: photo-default
 description: 
 thumbnail: https://farm8.staticflickr.com/7289/16357703875_bc4a1c41c7_o_d.jpg
-thumbnail_sm: https://farm8.staticflickr.com/7289/16357703875_abc98253b6_m_d.jpg
+thumbnail_sm: https://farm8.staticflickr.com/7311/16170349180_984819c568_z_d.jpg
 ---
 
 ## Thailand and Laos
