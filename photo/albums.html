@@ -7,26 +7,31 @@ layout: photo-default
 <script>
 $(document).ready(function() {
         $('.intro-header').css({
-            background: 'url(https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg) no-repeat center center',
+            background: 'url(/images/portfolio/greenspring-valley-xl.jpg) no-repeat center center',
             'background-size': 'cover'
         });
     console.log($('.intro-header'));
 });
 </script>
 
-<!-- Page Content -->
-{% for post in site.posts reversed %}
-{% if post.thumbnail %}
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 album-intro">
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="billvb-light">{{ post.description}}</div>
-                    <div class="thumbnail"><a href="{{ post.url }}"><img src="{{ post.thumbnail_sm }}" alt=""></a></div>
-                </div>
+
+<hr />
+<div class="container">
+    <div class="row">
+    {% for post in site.posts %}
+    {% if post.thumbnail %}
+        <div class="col-lg-6 album-intro">
+            <h3 class="section-heading">{{ post.title }}</h3>
+            <div class="thumbnail">
+                <a href="{{ post.url }}"><img src="{{ post.thumbnail_sm }}" alt="" /></a>
             </div>
         </div>
+    {% endif %}
+    {% endfor %}
     </div>
-{% endif %}
-{% endfor %}
+</div>
+
+{% comment %}
+<!-- Page Content -->
+
+{% endcomment %}

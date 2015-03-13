@@ -2,7 +2,7 @@
 title: Greenspring Valley Morning
 layout: photo-default
 thumbnail: https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg 
-thumbnail_sm: https://farm6.staticflickr.com/5616/15784049325_5916e64d32_z_d.jpg
+thumbnail_sm: https://farm8.staticflickr.com/7552/15782187011_7e3487da55_z_d.jpg
 ---
 
 ## Greenspring Valley Sunrise

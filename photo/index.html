@@ -4,32 +4,15 @@ subTitle: billvb/photography
 layout: photo-default
 ---
 
-<!--
-{% for post in site.posts %}
-{% if post.thumbnail %}
-<div class="entry-thumb">
-    <h4>{{ post.date | date_to_string }}</h4>
-    <h3>{{ post.title }}</h4>
-    <img src="{{ post.thumbnail }}" />
-    <br />
-    <a href="{{ post.url }}">Read post &raquo;</a>
-</div>
-{% endif %}
-{% endfor %}
-<br />
--->
-
-<!--
-            <ul class="bxslider">
-                <li><img src="https://farm4.staticflickr.com/3792/9999594204_032aa3abcf_o_d.jpg" title="Chianti, Italy"/></li>
-                <li><img src="https://farm9.staticflickr.com/8169/8046235450_148e91bfb3_o_d.jpg" title="Greenspring Valley"/></li>
-                <li><img src="https://farm3.staticflickr.com/2807/9356166954_8ecee29e68_o_d.jpg" title="Lutherville, MD"/></li>
-                <li><img src="http://farm8.staticflickr.com/7267/7616067190_a0f4f5a930_c.jpg" title="Peru"/></li>
-                <li><img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" "Tel Aviv"/></li>
-                <li><img src="http://farm9.staticflickr.com/8297/7883105112_7528677303_c.jpg" title="Doi Intanon, Thailand"/></li>
-                <li><img src="https://farm3.staticflickr.com/2863/9012444114_524c49608e_o_d.jpg" title="Amsterdam"/></li>
-            </ul>
-            -->
+<script>
+$(document).ready(function() {
+        $('.intro-header').css({
+            background: 'url(/images/portfolio/chianti-countryside-xl.jpg) no-repeat center center',
+            'background-size': 'cover'
+        });
+    console.log($('.intro-header'));
+});
+</script>
 
 <div class="content-section-a">
 

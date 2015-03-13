@@ -33,18 +33,15 @@
 
 .album-intro {
     text-align: center;
+    color: #888;
 }
 
-.album-intro h2 {
-    text-align: center;
-}
-
-.album-intro .thumbnail {
+.thumbnail {
     text-align: center;
     border: none;
 }
 
-.album-intro .thumbnail img {
-    max-height: 220px;
+.thumbnail img {
+    max-width: 100%;
 }
 
