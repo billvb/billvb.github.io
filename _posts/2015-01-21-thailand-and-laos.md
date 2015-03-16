@@ -23,6 +23,7 @@ thumbnail_sm: https://farm8.staticflickr.com/7289/16357703875_abc98253b6_z_d.jpg
     <img src="https://farm8.staticflickr.com/7388/16171524579_9204c1047e_h_d.jpg" />
     <img src="https://farm8.staticflickr.com/7443/16356841972_f57cdbe855_h_d.jpg" />
     <img src="https://farm8.staticflickr.com/7429/16331757896_54576f52de_h_d.jpg" />
+    <img src="https://farm6.staticflickr.com/5614/15785649342_9fbf2525e7_h_d.jpg" />
     <img src="https://farm9.staticflickr.com/8632/16355973701_068b9858d6_h_d.jpg" />
     <img src="https://farm8.staticflickr.com/7289/16357703875_bc4a1c41c7_o_d.jpg" />
 </div>
