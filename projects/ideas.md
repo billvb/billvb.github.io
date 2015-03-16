@@ -11,7 +11,12 @@ layout: base
 ...
 
 
-### The "Fallacy of Doing Work"
+### On C++
+
+...
+
+
+### The &laquo;Fallacy of Doing Work&raquo;
 
 ...
 
@@ -26,7 +31,7 @@ layout: base
 ...
 
 
-### Doing it Right the First Time
+### Do it Right the First Time
 
 ...
 
