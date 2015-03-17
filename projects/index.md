@@ -12,7 +12,7 @@ This page is intended to go into a little bit more depth on some of the activiti
 *Please see my resume for a brief synopsis of my work in this field.*
 
 
-### ExecSpec &mdash; Model-Based Spacecraft Fault Management
+### Model-Based Spacecraft Fault Management
 
 Traditional spacecraft autonomy systems are notoriously difficult to test, since they must be shown to react reliably to any number of potential faults in a complex hardware/software system in extreme environments. *ExecSpec* is a technology developed by JHUAPL to address these challenges and manage the complexity of designing and testing autonomy systems.
 
