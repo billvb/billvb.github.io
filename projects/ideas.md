@@ -16,7 +16,7 @@ layout: base
 ...
 
 
-### The &laquo;Fallacy of Doing Work&raquo;
+### The "Fallacy of Doing Work"
 
 ...
 
@@ -28,10 +28,12 @@ layout: base
 
 ### Success as Failure/Perceptions of Progress
 
-...
+Consider some of these situations.
 
+* Test
+* Hmm
 
-### Do it Right the First Time
+### Doing it <s>Right</s> Well the First Time
 
 ...
 

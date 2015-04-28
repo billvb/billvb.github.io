@@ -41,6 +41,19 @@
                {site: "photo",
                 page: $(location).attr('href'),
                 referrer: document.referrer});
+
+        $(document).ready(function() {
+           $('.album-intro img').css('opacity', 0.4);   
+
+           $('.album-intro').hover(
+               function() {
+                   $(this).find('img').stop().fadeTo('slow', 1);
+               },
+               function() {
+                   $(this).find('img').stop().fadeTo('slow', 0.4);  
+               }
+           );
+        });
         </script>
 	</body>
 </html>
