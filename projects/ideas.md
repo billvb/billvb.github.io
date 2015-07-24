@@ -18,6 +18,10 @@ layout: base
 
 ### The "Fallacy of Doing Work"
 
+<p class="well well-sm">
+<em>Hello</em>.
+</p>
+
 Among all the anti-patterns, downward spirals, and aimless trajectories that I've seen software projects and teams assume, there is one particularly pernicious bias that often serves at the enabler.
 This bias can affect everyone relating to the effort, from individual developers, to team leads, to program managers and even other observers from within the organization.
 I've come to call it the bias - or fallacy - of "doing work".
