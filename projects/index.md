@@ -26,9 +26,17 @@ The idea is twofold: first, to provide a low-cost testbed for the maturation of 
 
 
 
-### "Smart Remediation" and Fault Management
+### Autonomous Systems
 
-The challenge of autonomously diagnosing and responding to on-board faults.
+My work in autonomy - both for spacecraft and unmanned aircraft - has mostly revolved around fault diagnosis and remediation.
+The central challenge is for the craft's autonomy engine to generate a set of hypothesis pointing to the source of the fault,
+discriminate among them, and take the appropriate action to bring the craft into the safest possible state.
+
+There are a few different approaches to take, most of which involve using a model of the system to explain the observed behavior.
+These approaches range from highly deterministic ones to Monte Carlo methods in which repeated runs converge on a likely path through the state space.
+
+My majors efforts in this area has been in designing and studying these approaches for the NASA Solar Probe mission,
+as well as in other sponsored work for multi-agent, cooperative UAV autonomy testing.
 
 *Communications*
 
