@@ -5,7 +5,7 @@ layout: base
 
 ## More Information
 
-This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years.
+This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. It's not meant to be exhaustive.
 
 ### Embedded Aerospace Software and Network Architectures
 
@@ -18,7 +18,7 @@ and additionally provides incredible ease for prototyping and evaluating new tec
 
 I've recently been part of an effort to demonstrate the versatility of our flight software suite on an off-the-shelf quad copter
 (in our demonstation we use the Parrot AR Drone).
-The idea is twofold: first, to provide a low-cost testbed for the maturation of budding technologies, and second, to show the applicability of our software products in new markets.
+It provides a low-cost testbed for the maturation of budding technologies in addition to demonstrating the applicability of our software products in new markets.
 
 *Communications*
 
@@ -49,12 +49,6 @@ as well as in other sponsored work for multi-agent, cooperative UAV autonomy tes
 
  * (Internal/FOUO) Approach toward a quantifiable scheme for determing most-likely attack vectors, 2014.
  * (Internal/FOUO) On spacecraft cyber penetration and in-situ countermeasures, 2013.
- * "Protecting Against DNS Cache Poisoning Attacks". IEEE ICNP. Presented in Kyoto, Japan, 2010.
- * "Dynamic, Non-Interactive Key Management for the Bundle Protocol". ACM MobiCom. Presented in Chicago, 2010.
+ * "Protecting Against DNS Cache Poisoning Attacks". Published in the proceedings of the IEEE ICNP. Presented in Kyoto, Japan, 2010.
+ * "Dynamic, Non-Interactive Key Management for the Bundle Protocol". Published in the proceedings of ACM MobiCom. Presented in Chicago, 2010.
 
-
-
-
-### SCADA and Remote Data Acquisition
-
-(Still writing this page).
