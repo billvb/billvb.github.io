@@ -76,5 +76,5 @@ int main()
 </pre>
 
 <p>
-Of course, we want to check if `ioctl()` returns negative on error. If it does, and `perror()` reports "Bad Address", this means the kernel attempted to access an address outside of the calling process's address space. It probably means you forgot an `&`. 
+Of course, we want to check if `ioctl()` returns negative on error. If it does, and `perror()` reports "Bad Address", this means the kernel attempted to access an address outside of the calling process's address space. It probably means you forgot an `&amp;`. 
 </p>
