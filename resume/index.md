@@ -2,13 +2,7 @@
 title: Resume
 layout: base
 ---
-<a href="/resume/resume.html">View full-page, printable, with contact information</a>
 
-<style>
-#resume_header {
-    display: none;
-}
-</style>
-
-{% include resume.html %}
-
+<ul>
+    <li><a href="/resume/vanbesien_resume_20150826.pdf" target="_blank">Resume (as PDF)</a></li>
+</ul>

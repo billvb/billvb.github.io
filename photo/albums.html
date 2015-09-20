@@ -15,17 +15,49 @@ $(document).ready(function() {
 </script>
 
 
-<hr />
 <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Albums</h2>
+            <p>Some cats</p>
+        </div>
+    </div>
     <div class="row">
     {% for post in site.posts %}
     {% if post.thumbnail %}
-        <div class="col-lg-6 album-intro">
-            <h3 class="section-heading">{{ post.title }}</h3>
-            <div class="thumbnail">
-                <a href="{{ post.url }}"><img src="{{ post.thumbnail_sm }}" alt="" /></a>
+            <style>
+            /* Note: https://css-tricks.com/design-considerations-text-images/ */
+            .album-thumb {
+                display: block;
+                width: 450px;
+                min-height: 253px;
+                max-width: 100%;
+                float: left;
+                text-align: center;
+                background-size: cover;
+                position: relative;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+            .album-thumb h2 {
+                background: rgba(255, 255, 255, 0.75);
+                color: black;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background: rgba(0, 0, 0, 0.75);
+                padding: 4px 8px;
+                color: white;
+                margin: 0;
+                font: 18px Sans-Serif;
+            }
+            </style>
+            <div class="col-lg-6">
+                <a class="album-thumb" style="background: url({{ post.thumbnail_sm }});" href="{{ post.url }}">
+                    <h2>{{ post.title }}</h2>
+                </a>
             </div>
-        </div>
     {% endif %}
     {% endfor %}
     </div>

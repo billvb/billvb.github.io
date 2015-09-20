@@ -7,6 +7,24 @@ layout: base
 
 This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. It's not meant to be exhaustive.
 
+
+### Autonomous Systems
+
+My work in autonomy - both for spacecraft and unmanned aircraft - has mostly revolved around fault diagnosis and remediation.
+The central challenge is for the craft's autonomy engine to generate a set of hypothesis pointing to the source of the fault,
+discriminate among them, and take the appropriate action to bring the craft into the safest possible state.
+
+There are a few different approaches to take, most of which involve using a model of the system to explain the observed behavior.
+These approaches range from highly deterministic ones to Monte Carlo methods in which repeated runs converge on a likely path through the state space.
+
+My majors efforts in this area has been in implementing these approaches in testbeds for the NASA Solar Probe mission,
+as well as in other sponsored work for multi-agent, cooperative UAV autonomy testing.
+
+*Communications*
+
+ * "Investigating Model-Based Autonomy for Solar Probe Plus". Workshop on Spacecraft Flight Software. Presented at Caltech, 2013.
+
+
 ### Embedded Aerospace Software and Network Architectures
 
 On my Github account I mirror the offical open-source releases of the NASA-GSFC [Core Flight Executive (CFE)](https://github.com/billvb/cfe) and [Operating System Abstraction Layer (OSAL)](https://github.com/billvb/osal).
@@ -23,24 +41,6 @@ It provides a low-cost testbed for the maturation of budding technologies in add
 *Communications*
 
  * "SpaceDrone - Running APL spacecraft flight software on an off-the-shelf commercial quadcopter". Winner of the APL Achievement Awards Ignition Grant Category. 2015.
-
-
-
-### Autonomous Systems
-
-My work in autonomy - both for spacecraft and unmanned aircraft - has mostly revolved around fault diagnosis and remediation.
-The central challenge is for the craft's autonomy engine to generate a set of hypothesis pointing to the source of the fault,
-discriminate among them, and take the appropriate action to bring the craft into the safest possible state.
-
-There are a few different approaches to take, most of which involve using a model of the system to explain the observed behavior.
-These approaches range from highly deterministic ones to Monte Carlo methods in which repeated runs converge on a likely path through the state space.
-
-My majors efforts in this area has been in designing and studying these approaches for the NASA Solar Probe mission,
-as well as in other sponsored work for multi-agent, cooperative UAV autonomy testing.
-
-*Communications*
-
- * "Investigating Model-Based Autonomy for Solar Probe Plus". Workshop on Spacecraft Flight Software. Presented at Caltech, 2013.
 
 
 ### Cyber Security
