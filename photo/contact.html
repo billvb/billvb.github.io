@@ -1,27 +1,43 @@
 ---
 title: Contact
 subTitle: 
-layout: photo-default
+layout: min
 ---
 
-<script>
-$(document).ready(function() {
-        $('.intro-header').css({
-            background: 'url(/images/portfolio/lao-monks-xl.jpg) no-repeat center center',
-            'background-size': 'cover'
-        });
-    console.log($('.intro-header'));
-});
-</script>
+<style>
+body {
+        background: url(/images/portfolio/greenspring-valley-xl.jpg) no-repeat center center;
+        background-size: cover;
+}
 
+#message-form {
+    padding: 1em;
+    background-color: rgba(233,233,233, 0.5);
+}
 
-<hr />
+input, textarea {
+    background-color: #000;
+    color: black;
+    border-width: 1px solid #000 !important;
+}
+
+</style>
+
 <div class="container">
+<div class="row">
+        <div class="col-xs-12 normal-menu">
+            <ul>
+                    <li><a href="/photo/">home</a></li>
+                    <li><a href="/photo/albums.html">albums</a></li>
+                    <li><a href="/photo/contact.html">contact me</a></li>
+            </ul>
+            <br />
+            <h2>contact</h2>
+            <br /><br />
+        </div>
+</div>
+<div class="row">
     <div class="col-sm-6">
-    </div>
-
-    <div class="col-sm-6">
-        <h2>Contact</h2>
         <form class="form-horizontal" id="message-form">
             <fieldset>
 
@@ -32,18 +48,10 @@ $(document).ready(function() {
                     </div>
                 </div>
 
-                <!-- Text input-->
-                <div class="form-group">
-                    <div class="col-md-6">
-                        <input id="user-name" name="user-name" type="text" placeholder="Your Name" class="form-control input-md" required="">
-
-                    </div>
-                </div>
-
                 <!-- Textarea -->
                 <div class="form-group">
                     <div class="col-md-6">                     
-                        <textarea class="form-control" id="user-message" name="user-message" required=""></textarea>
+                        <textarea class="form-control" id="user-message" name="user-message" required="" placeholder="Your Message"></textarea>
                     </div>
                 </div>
 
@@ -57,6 +65,7 @@ $(document).ready(function() {
             </fieldset>
         </form>
     </div>
+</div>
 </div>
 
 <script>
@@ -76,14 +85,12 @@ $(document).ready(function() {
                 })
             .done(function (succ) {
                 clear_to_submit = false;
-                $('#message-form').html('<p class="alert alert-info">Got it, thanks!</p>');
+                $('#message-form').html('<p>Got it, thanks!</p>').fadeIn(1000);
             })
             .fail(function (err) {
                 console.log('Cannot submit...');
                 console.log(err);
-                $('#message-form').html('<p class="alert alert-danger">Sorry, this is not working. Just email me dog@catstein.com</p>');
+                $('#message-form').html('<p>Sorry, this is not working. Just email me dog@catstein.com</p>').fadeIn(1000);
             });
     });
 </script>
-
-<hr />

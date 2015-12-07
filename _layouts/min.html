@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include js.html %}
+
+        <br />
+        <script>
+        
+            $(document).ready(function() {
+                $('.intro-header').css({
+                    background: 'url({{ page.thumbnail }}) no-repeat center center',
+                    'background-size': 'cover'
+                });
+            });
+        </script>
+
+        {{ content }}
+
+        <script>
+        $.post("http://dev.billvb.com:90/log",
+               {site: "photo",
+                page: $(location).attr('href'),
+                referrer: document.referrer});
+
+        $(document).ready(function() {
+           $('.album-intro img').css('opacity', 0.4);   
+
+           $('.album-intro').hover(
+               function() {
+                   $(this).find('img').stop().fadeTo('slow', 1);
+               },
+               function() {
+                   $(this).find('img').stop().fadeTo('slow', 0.4);  
+               }
+           );
+        });
+        </script>
+	</body>
+</html>
