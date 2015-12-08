@@ -6,77 +6,70 @@ layout: min
 
 <style>
 html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    background-color: #001;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        background-color: #001;
 }
 </style>
 
-<div class="container">
-        <div class="row">
-                <div class="col-xs-12 home-menu">
-                        {% include photo-menu.html %}
-                </div>
-        </div>
-    <div class="row">
-            <style>
-                .swiper-container {
-                    height: 300px;
-                }
-                .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-                }
+{% include photo-menu.html %}
 
-                .swiper-slide { 
-                        width: 100%;
-                        max-height: 100%; }
+<style>
+.swiper-container {
+        height: 300px;
+}
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
 
-                .caption {
-                        background: rgba(255, 255, 255, 0.75);
-                        color: black;
-                        position: absolute;
-                        bottom: 10px;
-                        left: 10px;
-                        background: rgba(0, 0, 0, 0.75);
-                        padding: 4px 8px;
-                        color: white;
-                        margin: 0;
-                        font: 18px Sans-Serif;
-                }
-            </style>
+.swiper-slide { 
+        width: 100%;
+        max-height: 100%; }
 
-        <div class="col-xs-12 swiper-container">
-            <div class="swiper-wrapper">
-            {% for post in site.posts %}
-            {% if post.thumbnail %}
+.caption {
+        background: rgba(255, 255, 255, 0.75);
+        color: black;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 4px 8px;
+        color: white;
+        margin: 0;
+        font: 18px Sans-Serif;
+}
+</style>
+
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+                {% for post in site.posts %}
+                {% if post.thumbnail %}
                 <div class="swiper-slide" style="background: url({{ post.thumbnail }}) no-repeat center center; background-size: cover;">
                         <p class="caption">{{ post.title }}</p>
                 </div>
-            {% endif %}
-            {% endfor %}
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+                {% endif %}
+                {% endfor %}
         </div>
-    </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 </div>
 
 <!-- Initialize Swiper -->
