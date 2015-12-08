@@ -5,7 +5,11 @@ layout: min
 ---
 
 <style>
-body {
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
     background-color: #001;
 }
 </style>
@@ -17,8 +21,77 @@ body {
                 </div>
         </div>
     <div class="row">
-    {% for post in site.posts %}
-    {% if post.thumbnail %}
+            <style>
+                .swiper-container {
+                    height: 300px;
+                }
+                .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                }
+
+                .swiper-slide { 
+                        width: 100%;
+                        max-height: 100%; }
+
+                .caption {
+                        background: rgba(255, 255, 255, 0.75);
+                        color: black;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10px;
+                        background: rgba(0, 0, 0, 0.75);
+                        padding: 4px 8px;
+                        color: white;
+                        margin: 0;
+                        font: 18px Sans-Serif;
+                }
+            </style>
+
+        <div class="col-xs-12 swiper-container">
+            <div class="swiper-wrapper">
+            {% for post in site.posts %}
+            {% if post.thumbnail %}
+                <div class="swiper-slide" style="background: url({{ post.thumbnail }}) no-repeat center center; background-size: cover;">
+                        <p class="caption">{{ post.title }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Initialize Swiper -->
+<script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+        });
+</script>
+
+
+{% comment %}
             <style>
             /* Note: https://css-tricks.com/design-considerations-text-images/ */
             .album-thumb {
@@ -52,7 +125,4 @@ body {
                     <h2>{{ post.title }}</h2>
                 </a>
             </div>
-    {% endif %}
-    {% endfor %}
-    </div>
-</div>
+    {% endcomment %}
