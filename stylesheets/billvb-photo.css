@@ -68,19 +68,10 @@
 }
 
 .home-menu ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-}
-
-.home-menu ul a, .normal-menu ul a {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.7);
-        margin-top: 2px;
-        margin-bottom: 2px;
-        padding: 4px 8px;
-        color: #227;
-        font: 13pt Sans-Serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    list-style-type: none;
 }
 
 .normal-menu ul {
@@ -88,6 +79,17 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
+}
+
+.home-menu ul a,
+.normal-menu ul a {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 4px 8px;
+    color: #227;
+    font: 13pt Sans-Serif;
 }
 
 .normal-menu ul li {

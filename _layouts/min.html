@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
 
-	<body>
-		{% include js.html %}
+{% include head.html %}
+
+<body>
+{% include js.html %}
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
 
-        <br />
         <script>
-        
             $(document).ready(function() {
                 $('.intro-header').css({
                     background: 'url({{ page.thumbnail }}) no-repeat center center',
@@ -19,7 +18,7 @@
             });
         </script>
 
-        {{ content }}
+{{ content }}
 
         <script>
         $.post("http://dev.billvb.com:90/log",
@@ -28,17 +27,15 @@
                 referrer: document.referrer});
 
         $(document).ready(function() {
-           $('.album-intro img').css('opacity', 0.4);   
-
-           $('.album-intro').hover(
-               function() {
-                   $(this).find('img').stop().fadeTo('slow', 1);
-               },
-               function() {
-                   $(this).find('img').stop().fadeTo('slow', 0.4);  
-               }
-           );
-        });
+            $('.album-intro img').css('opacity', 0.4);   
+            $('.album-intro').hover(
+                function() {
+                    $(this).find('img').stop().fadeTo('slow', 1);
+                },
+                function() {
+                    $(this).find('img').stop().fadeTo('slow', 0.4);  
+                }
+            );});
         </script>
-	</body>
+</body>
 </html>
