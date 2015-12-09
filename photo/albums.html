@@ -10,16 +10,22 @@ html, body {
         padding: 0;
         margin: 0;
         position: relative;
-        background-color: #001;
+        background-color: #000;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 5%;
+    z-index: 1000;
 }
 </style>
 
-{% include photo-menu.html %}
-
 <style>
 .swiper-container {
-        height: 300px;
+    height: 95%;
+    width: 100%;
 }
+
 .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -40,20 +46,22 @@ html, body {
 }
 
 .swiper-slide { 
+        background: rgba(0,0,0,1);
         width: 100%;
         max-height: 100%; }
 
 .caption {
-        background: rgba(255, 255, 255, 0.75);
-        color: black;
         position: absolute;
-        bottom: 10px;
-        left: 10px;
-        background: rgba(0, 0, 0, 0.75);
+        bottom: 12%;
+        /* left: 00%; */
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(0, 0, 0, 0.35);
         padding: 4px 8px;
         color: white;
-        margin: 0;
-        font: 18px Sans-Serif;
+        font-weight: 400;
+        font: 14pt Sans-Serif;
 }
 </style>
 
@@ -61,7 +69,7 @@ html, body {
         <div class="swiper-wrapper">
                 {% for post in site.posts %}
                 {% if post.thumbnail %}
-                <div class="swiper-slide" style="background: url({{ post.thumbnail }}) no-repeat center center; background-size: cover;">
+                <div class="swiper-slide" style="background: url({{ post.thumbnail }}) no-repeat center center; background-size: contain;">
                         <p class="caption">{{ post.title }}</p>
                 </div>
                 {% endif %}
@@ -72,6 +80,11 @@ html, body {
         <div class="swiper-button-prev"></div>
 </div>
 
+<div class="fixed-menu home-menu">
+{% include photo-menu.html %}
+</div>
+
+
 <!-- Initialize Swiper -->
 <script>
         var swiper = new Swiper('.swiper-container', {
@@ -79,43 +92,7 @@ html, body {
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30
+        spaceBetween: 30,
+        grabCursor: true
         });
 </script>
-
-
-{% comment %}
-            <style>
-            /* Note: https://css-tricks.com/design-considerations-text-images/ */
-            .album-thumb {
-                display: block;
-                width: 450px;
-                min-height: 253px;
-                max-width: 100%;
-                float: left;
-                text-align: center;
-                background-size: cover;
-                position: relative;
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-
-            .album-thumb h2 {
-                background: rgba(255, 255, 255, 0.75);
-                color: black;
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                background: rgba(0, 0, 0, 0.75);
-                padding: 4px 8px;
-                color: white;
-                margin: 0;
-                font: 18px Sans-Serif;
-            }
-            </style>
-            <div class="col-lg-6">
-                <a class="album-thumb" style="background: url({{ post.thumbnail_sm }});" href="{{ post.url }}">
-                    <h2>{{ post.title }}</h2>
-                </a>
-            </div>
-    {% endcomment %}
