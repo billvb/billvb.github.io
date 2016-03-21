@@ -8,7 +8,7 @@ I am a software engineer in Washington, DC. My focus is on autonomous systems, c
 I split my time between **Nextility**, a rapidly-growing energy-services startup located in DC, and the spacecraft flight software group at the **Johns Hopkins University Applied Physics Lab** (JHUAPL).
 
 At JHUAPL much of my work has involved the R&amp;D, operations, and analysis of technologies for several NASA space missions.
-Over the years, these have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger.
+Over the years these have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger.
 
 I also maintain the website for the annual Workshop on Spacecraft Flight Software [flightsoftware.org](http://flightsoftware.org).
 
