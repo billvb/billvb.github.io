@@ -66,17 +66,19 @@
         
         $(document).ready(function() {
           $('.read_more_content').parent().hide();
-          $('#read_less_link').parent.hide();
+          $('#read_less_link').hide();
         });
         
         $('#read_less_link').click(function() {
-          $('#read_less_link').parent.hide();
+          $('#read_less_link').hide();
+          $('#read_more_link').show()
           $('.read_more_content').parent().hide();
           
         });
         
         $('#read_more_link').click(function() {
-          $('#read_more_link').parent.hide();
+          $('#read_more_link').hide();
+          $('#read_less_link').show();
           $('.read_more_content').parent().show();
           
           $.post("http://dev.billvb.com:90/log",
