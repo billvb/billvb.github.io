@@ -5,6 +5,8 @@ layout: base
 
 I am a multi-disciplinary software engineer living in Washington, DC. I've split my time between the Applied Physics Lab and a startup, where I work on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
 
+<a id="read_more_link" href="#">[Read more]</a>
+
 <span class="read_more_content">
 I spend most of my time in the spacecraft flight software group at the **Johns Hopkins University Applied Physics Lab** (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently my research and development efforts have been in safety systems for autonomous aircraft.
 </span>
