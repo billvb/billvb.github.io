@@ -12,7 +12,7 @@ I spend most of my time in the spacecraft flight software group at the Johns Hop
 </span>
 
 <span class="read_more_content">
-In 2013 I also became a member of the tech team at Nextility, a rapidly-growing energy-services startup located in DC, where I spend a few days each week. My work there has included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from mjaor East Coast gas and electricity utilities, which is one of the key ingredients for enabling our brokerage line-of-business.
+In 2013 I also became a member of the tech team at Nextility, a rapidly-growing energy-services startup located in DC, where I spend a few days each week. My work there has included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from major East Coast gas and electricity utilities, which is one of the key ingredients for enabling our brokerage line-of-business.
 </span>
 
 <span class="read_more_content">
@@ -21,7 +21,7 @@ Spending time in the startup world and at the Applied Physics Lab has been an ex
 
 <a id="read_more_link" href="#">[Show more]</a>
 
-Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, serve as a great way to build friendships and thrive off my peers' creativity, and afford a freedom to focus on the other things important in business and life. 
+Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, afford a freedom to focus on the other things important in business and life, and serve as a great way to build friendships and thrive off my peers' creativity.
 
 <img id="my-photo" src="/images/BB-10.jpg" />
 
