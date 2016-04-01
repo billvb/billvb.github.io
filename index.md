@@ -17,7 +17,9 @@ In 2013 I also became a member of the tech team at Nextility, a rapidly-growing 
 Spending time in the startup world and at the Applied Physics Lab has been an excellent opportunity to foster both depth in technical research, as well as competency in developing and deploying high-quality, business-critical software with deliveries on a quick tempo. In the course of a single week I may one day be working with a team of applied mathematicians to study formal verification for autonomous aircraft behavioral models, and the next day serving as a DevOps engineer writing Ansible playbooks to manage application deployment to a cloud infrastructure.
 </span>
 
-<a id="read_more_link" href="#">[Read more]</a>
+<a id="read_more_link" href="#">[Show more]</a>
+
+<a id="read_less_link" href="#">[Show less]</a>
 
 Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, serve as a great way to build friendships and thrive off my peers' creativity, and afford a freedom to focus on the other things important in business and life. 
 
