@@ -3,14 +3,14 @@ title: Home
 layout: base
 ---
 
-I am a multi-disciplinary software engineer living in Washington, DC. I've split my time between the Applied Physics Lab and a startup, where I work on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
+I am a multi-disciplinary software engineer living in Washington, DC. Each week I split my time between the **JHU Applied Physics Lab** and and **Nextility** (an energy services startup), where I work on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
 
 <span class="read_more_content">
-I spend most of my time in the spacecraft flight software group at the **Johns Hopkins University Applied Physics Lab** (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently my research and development efforts have been in safety systems for autonomous aircraft.
+I spend most of my time in the spacecraft flight software group at the Johns Hopkins University Applied Physics Lab (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently my research and development efforts have been in safety systems for autonomous aircraft.
 </span>
 
 <span class="read_more_content">
-In 2013 I also became a member of the tech team at **Nextility**, a rapidly-growing energy-services startup located in DC, where I spend a few days each week. My work there has included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from mjaor East Coast gas and electricity utilities, which is one of the key ingredients for enabling our brokerage line-of-business.
+In 2013 I also became a member of the tech team at Nextility, a rapidly-growing energy-services startup located in DC, where I spend a few days each week. My work there has included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from mjaor East Coast gas and electricity utilities, which is one of the key ingredients for enabling our brokerage line-of-business.
 </span>
 
 <span class="read_more_content">
@@ -19,7 +19,7 @@ Spending time in the startup world and at the Applied Physics Lab has been an ex
 
 <a id="read_more_link" href="#">[Read more]</a>
 
-A central theme in my career has been in observing and refining how to develop software *well*. Informed by almost a decade of experience, it's been my observation that developing software *well* is personally gratifying, serves as a great way to build friendships and thrive off my peers' creativity, and affords a freedom to focus on the other things important in business and life. 
+Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, serve as a great way to build friendships and thrive off my peers' creativity, and afford a freedom to focus on the other things important in business and life. 
 
 <img id="my-photo" src="/images/BB-10.jpg" />
 
