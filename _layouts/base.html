@@ -72,14 +72,14 @@
         $('#read_less_link').click(function() {
           $('#read_less_link').parent().hide();
           $('#read_more_link').show()
-          $('.read_more_content').parent().hide();
+          $('.read_more_content').parent().hide(400);
           
         });
         
         $('#read_more_link').click(function() {
           $('#read_more_link').hide();
           $('#read_less_link').parent().show();
-          $('.read_more_content').parent().show();
+          $('.read_more_content').parent().show(400);
           
           $.post("http://dev.billvb.com:90/log",
                {site: "github",
