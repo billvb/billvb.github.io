@@ -65,12 +65,12 @@
                 referrer: document.referrer});
         
         $(document).ready(function() {
-          $('.read_more_content').hide();
+          $('.read_more_content').parent().hide();
         });
         
         $('#read_more_link').click(function() {
           $('#read_more_link').hide();
-          $('.read_more_content').show();
+          $('.read_more_content').parent().show();
           
           $.post("http://dev.billvb.com:90/log",
                {site: "github",
