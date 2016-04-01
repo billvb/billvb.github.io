@@ -59,21 +59,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
     <script>
-        /*
-        $.ajax({type: "POST",
-                url: "http://dev.billvb.com:5000/log",
-                contentType: 'application/json;charset=UTF-8',
-                data: { site: "github",
-                        page: window.location.pathname,
-                        referrer: document.referrer }
-               });
-        */
-
+        var readContent;
+        
         $.post("http://dev.billvb.com:90/log",
                {site: "github",
                 page: $(location).attr('href'),
                 referrer: document.referrer});
-
+        
+        $(document).load(function() {
+          readContent = $('#read_more_content').html();
+          $('#read_more_content').html('<a href="#">[Read more]</a>');
+        });
+        
+        $('#read_more_content').click(function() {
+          $('#read_more_content').html(readContent);
+        });
     </script>
     <!-- Placed at the end of the document so the pages load faster -->
   </body>
