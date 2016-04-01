@@ -5,6 +5,8 @@ layout: base
 
 I am a multi-disciplinary software engineer living in Washington, DC. Each week I split my time between the **JHU Applied Physics Lab** and and **Nextility** (an energy services startup), where I work on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
 
+<a id="read_less_link" href="#">[Show less]</a>
+
 <span class="read_more_content">
 I spend most of my time in the spacecraft flight software group at the Johns Hopkins University Applied Physics Lab (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently my research and development efforts have been in safety systems for autonomous aircraft.
 </span>
@@ -18,8 +20,6 @@ Spending time in the startup world and at the Applied Physics Lab has been an ex
 </span>
 
 <a id="read_more_link" href="#">[Show more]</a>
-
-<a id="read_less_link" href="#">[Show less]</a>
 
 Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, serve as a great way to build friendships and thrive off my peers' creativity, and afford a freedom to focus on the other things important in business and life. 
 
