@@ -59,21 +59,33 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
     <script>
-        /*
-        $.ajax({type: "POST",
-                url: "http://dev.billvb.com:5000/log",
-                contentType: 'application/json;charset=UTF-8',
-                data: { site: "github",
-                        page: window.location.pathname,
-                        referrer: document.referrer }
-               });
-        */
-
         $.post("http://dev.billvb.com:90/log",
                {site: "github",
                 page: $(location).attr('href'),
                 referrer: document.referrer});
-
+        
+        $(document).ready(function() {
+          $('.read_more_content').parent().hide();
+          $('#read_less_link').parent().hide();
+        });
+        
+        $('#read_less_link').click(function() {
+          $('#read_less_link').parent().hide();
+          $('#read_more_link').show()
+          $('.read_more_content').parent().hide(400);
+          
+        });
+        
+        $('#read_more_link').click(function() {
+          $('#read_more_link').hide();
+          $('#read_less_link').parent().show();
+          $('.read_more_content').parent().show(400);
+          
+          $.post("http://dev.billvb.com:90/log",
+               {site: "github",
+                page: 'read_more',
+                referrer: ""});
+        });
     </script>
     <!-- Placed at the end of the document so the pages load faster -->
   </body>
