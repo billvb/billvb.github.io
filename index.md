@@ -8,7 +8,7 @@ I am a multi-disciplinary software engineer living in Washington, DC. Each week 
 <a id="read_less_link" href="#">[Show less]</a>
 
 <span class="read_more_content">
-I spend most of my time in the spacecraft flight software group at the Johns Hopkins University Applied Physics Lab (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently my research and development efforts have been in safety systems for autonomous aircraft.
+I spend most of my time in the spacecraft flight software group at the Johns Hopkins University Applied Physics Lab (JHUAPL), where much of my work involves the R&amp;D, operations, and analysis of technologies for several NASA space missions. Over the years these missions have included Solar Probe, the Van Allen Probes, EPOXI, and Messenger. More recently, my research and development efforts have been in safety systems for autonomous aircraft. I've also worked on cyber security issues as pertaining to space flight operations, which has been a very interesting - to say the least.
 </span>
 
 <span class="read_more_content">
@@ -16,7 +16,7 @@ In 2013 I also became a member of the tech team at Nextility, a rapidly-growing 
 </span>
 
 <span class="read_more_content">
-Spending time in the startup world and at the Applied Physics Lab has been an excellent opportunity to foster both depth in technical research, as well as competency in developing and deploying high-quality, business-critical software with deliveries on a quick tempo. In the course of a single week I may one day be working with a team of applied mathematicians to study formal verification for autonomous aircraft behavioral models, and the next day serving as a DevOps engineer writing Ansible playbooks to manage application deployment to a cloud infrastructure.
+Spending time in the startup world and at the Applied Physics Lab has allowed me to foster both depth in technical research, as well as competency in developing and deploying high-quality, business-critical software with deliveries on a quick tempo. In the course of a single week I may one day be working with a team of applied mathematicians to study formal verification for autonomous aircraft behavioral models, and the next day serving as a DevOps engineer writing Ansible playbooks to manage application deployment to a cloud infrastructure.
 </span>
 
 <a id="read_more_link" href="#">[Show more]</a>
