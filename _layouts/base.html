@@ -4,55 +4,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>{{ page.title }} - billvb.github.io</title>
+    <title>Bill Van Besien, {{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/stylesheets/billvb.css" rel="stylesheet">
-
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-
   </head>
-
-  <style>
-    div.page-header {
-        border-bottom-width: 0px;
-    }
-  </style>
-
 
   <body>
     <div class="container">
-
         <div class="page-header">
-            <div id="interesting">
-                <div id="decal"></div>
-                <div id="heading">
-                    <div id="title">
-                        <h1>Bill Van Besien</h1>
-                    </div>
-                    <ul class="nav nav-pills" id="pages-menu">
-                        <li {% if page.title == "Home" %}class="active"{% endif %}><a href="/">Home</a></li>
-                        <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="/resume">Resume</a></li>
-                        <li {% if page.title == "Projects" %}class="active"{% endif %}><a href="/projects">Projects</a></li>
-                    </ul>
+            <div id="decal"></div>
+            <div id="heading">
+                <div id="title">
+                    <h1>Bill Van Besien</h1>
                 </div>
+                <ul class="nav nav-pills" id="pages-menu">
+                    <li {% if page.title == "Home" %}class="active"{% endif %}><a href="/">Home</a></li>
+                    <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="/resume">Resume</a></li>
+                    <li {% if page.title == "Projects" %}class="active"{% endif %}><a href="/projects">Projects</a></li>
+                </ul>
             </div>
-
       </div>
-
       <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 billvb-content">{{ content }}</div>
       </div>
-
     </div> <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -87,6 +69,5 @@
                 referrer: ""});
         });
     </script>
-    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>

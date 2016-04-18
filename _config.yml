@@ -1,4 +1,5 @@
 safe: true
 lsi: false
 pygments: true
+host: 0.0.0.0
 

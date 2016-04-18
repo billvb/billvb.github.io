@@ -3,28 +3,21 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700);
 
 body {
-    /*font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    /*font: 12pt/1.5 Merriweather;*/
     font: 12pt/1.5 Merriweather;
-    color:#333; /* was 777 */
     font-weight: 300;
+    color: #393D44;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-
-    color:#777; /* was 777 */
     font-weight: 700;
 }
 
-
-.billvb-content li {
-    max-width: 700px;
-    font-size: 12pt;
+h3 {
+    margin-top: 2.3em;
+    font-size: 14pt;
 }
 
 p {
-    max-width: 700px; /*36em;*/
     font-size: 12pt;
     line-height: 175%;
     letter-spacing: 0.01rem;
@@ -33,18 +26,18 @@ p {
     text-align: left;
 }
 
-#site-title {
-    color: #aaa;
+.billvb-content {
+    max-width: 42em;
 }
 
 #pages-menu {
-    margin-left: -14px;
+    margin-left: -5px;
 }
 
-
-#interesting #pages-menu {
-    margin-left: 15px;
-    padding-left: 12px;
+.page-header {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    border-bottom-width: 0px;
 }
 
 .nav-pills>li>a {
@@ -70,84 +63,6 @@ p {
     color: #428bca;
     border: 1px solid transparent;
     border-bottom: 1px solid #ccc;
-}
-
-#interesting {
-    overflow: hidden;
-}
-
-#interesting #decal {
-    width: 14px;
-    height: 74px;
-    border: 1px solid #ffbd6d;
-    background-color: #ffb56d;
-    border-radius: 0px;
-    float: left;
-}
-
-#interesting #heading {
-    vertical-align: middle;
-}
-
-#interesting #heading #title {
-    padding-left: 15px;
-    margin-left: 15px;
-    vertical-align: middle;
-    padding-top: auto;
-    padding-bottom: auto;
-}
-
-#interesting #heading #title h1 {
-    font-size: 16pt;
-    margin: 0;
-    padding: 0;
-    padding-left: 3px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-#interesting #heading #title p {
-    margin: 0;
-    padding: 0;
-    text-decoration: italic;
-    font-size: 11pt;
-    font-color: #666;
-}
-
-
-.billvb-content img {
-    max-width: 100%;
-}
-
-.post_entry img {
-    padding: 0;
-    margin: 0;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-
-.album-thumb {
-    text-align: center;
-}
-
-
-.display-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.content-slide p {
-    text-align: center;
-    margin-top: -30px;
-    width: 100%;
-    max-width: 100%;
-    display: none;
 }
 
 #my-photo {
