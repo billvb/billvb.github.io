@@ -7,7 +7,7 @@ _Note:_ *The resume on this page is abbreviated, download the [full resume as PD
 
 ### JHU Applied Physics Lab
 
-###### Senior Developer, Professional Staff
+###### Software Team Lead, Professional Staff
 
 *2008 &mdash; Present:* Research, develop, and integrate novel technologies into NASA space missions, including for purposes of autonomy/safety, networking, and cyber security.
 Contribute to other lab-wide efforts regarding autonomous systems and aerospace technologies.
