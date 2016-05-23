@@ -43,4 +43,4 @@ Fully sponsored 2008-10 under the National Science Foundation Cyber Corps fellow
 
 ### Publications, Skills, etc
 
-Detailed in the [full resume PDF](http://billvb.github.io/resume/vanbesien_resume_201604.pdf).
+Detailed in the [full resume PDF](/vanbesien_resume_201604.pdf).
