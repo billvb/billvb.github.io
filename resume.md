@@ -3,7 +3,7 @@ title: Resume
 layout: base
 ---
 
-_Note:_ *The resume on this page is abbreviated, download the [full resume as PDF, 2016](http://billvb.github.io/resume/vanbesien_resume_201604.pdf)*
+_Note:_ *The resume on this page is abbreviated, download the [full resume as PDF, 2016](/vanbesien_resume_201604.pdf)*
 
 ### JHU Applied Physics Lab
 
