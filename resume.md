@@ -11,7 +11,7 @@ _Note:_ *The resume on this page is abbreviated, download the [full resume as PD
 
 *2008 &mdash; Present:* Research, develop, and integrate novel technologies into NASA space missions, including for purposes of autonomy/safety, networking, and cyber security.
 
-Currently serving as the software team lead on a product for air traffic control to ensure manned and unmanned aircraft (drones) operate safely together in the national airspace. The involves researching inference engines and corresponding approaches to formal verification, developing high-quality, high-reliability software for the safety-critical environment, and bringing the product to operational capacity for air traffic control and flight test managers.
+Currently serving as the software team lead on a product for air traffic control to ensure manned and unmanned aircraft (drones) operate safely together in the national airspace. This involves researching inference engines and corresponding approaches to formal verification, developing high-quality, high-reliability software for the safety-critical environment, and bringing the product to operational capacity for air traffic control and flight test managers.
 
 Other ongoing efforts involve advocating for APL's mission-independent spacecraft flight software - specifically to demonstrate its enterprise value and suitability for "operationalizing" off-the-shelf UAV/drone fleets and missions.
 
