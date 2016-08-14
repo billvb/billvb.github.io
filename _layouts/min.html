@@ -4,38 +4,16 @@
 {% include head.html %}
 
 <body>
-{% include js.html %}
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/hammer.min.js"></script>
+    {{ content }}
 
-        <script>
-            $(document).ready(function() {
-                $('.intro-header').css({
-                    background: 'url({{ page.thumbnail }}) no-repeat center center',
-                    'background-size': 'cover'
-                });
-            });
-        </script>
-
-{{ content }}
-
-        <script>
+    <script>
         $.post("http://dev.billvb.com:90/log",
                {site: "photo",
                 page: $(location).attr('href'),
                 referrer: document.referrer});
-
-        $(document).ready(function() {
-            $('.album-intro img').css('opacity', 0.4);   
-            $('.album-intro').hover(
-                function() {
-                    $(this).find('img').stop().fadeTo('slow', 1);
-                },
-                function() {
-                    $(this).find('img').stop().fadeTo('slow', 0.4);  
-                }
-            );});
-        </script>
+    </script>
 </body>
 </html>

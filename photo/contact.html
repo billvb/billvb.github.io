@@ -6,9 +6,8 @@ layout: min
 
 <style>
 body {
-        xbackground: url(/images/portfolio/greenspring-valley-xl.jpg) no-repeat center center;
-        xbackground: url(https://farm8.staticflickr.com/7272/7011463373_cfdf364b92_o_d.jpg) no-repeat center center;
         background: url(https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg) no-repeat center center;
+        background-attachment: fixed;
         background-size: cover;
         background-color: #000;
 }
@@ -42,13 +41,12 @@ input, textarea {
 
 <div class="container">
 <div class="row">
-        <div class="col-lg-4 home-menu">
-            {% include photo-menu.html %}
-        </div>
-</div>
-<div class="row">
     <div class="col-md-4">
-        <br />
+        <div class="home-menu">
+        {% include photo-menu.html %}
+        </div>
+    </div>
+    <div class="col-md-8 photo-content">
         <form class="form-horizontal" id="message-form">
             <fieldset>
                 <p>To drop a line</p>
@@ -76,10 +74,6 @@ input, textarea {
 
             </fieldset>
         </form>
-    </div>
-    <div class="col-md-8 text-background">
-            <h2>my photography</h2>
-            <img src="/images/lola.jpg" style="float: left; margin-right: 1em; margin-bottom: 1em; width: 200px;">
     </div>
 </div>
 </div>

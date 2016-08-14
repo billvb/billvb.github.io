@@ -6,20 +6,42 @@ layout: min
 
 <style>
 body {
-        /*background: url(/images/portfolio/chianti-countryside-xl.jpg) no-repeat left center;*/
         background: url(/images/portfolio/web-size/germany-1.webp) no-repeat left center;
         background-size: cover;
+        background-attachment: fixed;
 }
+
+.home-menu {
+        text-align: right; }
 </style>
 
 <div class="container">
         <div class="row">
-                <div class="col-lg-4 home-menu">
-                    <h1>billvb<br />photography</h1> 
+                <div class="col-md-4">
+                    <div class="home-menu">
                     {% include photo-menu.html %}
+                    </div>
                 </div>
-                <div class="col-lg-8 my-main">
+                <div class="col-md-8 photo-content">
                 </div>
         </div>
 </div>
 
+<script>
+  $(document).ready(function () {
+      var hammertime = new Hammer(document.getElementsByTagName('html')[0]);
+      hammertime.on('swipeleft', function(ev) {
+        $('#cats').text('left');
+        $('body').css({
+            'background': 'url(/images/portfolio/web-size/germany-1.webp) no-repeat left center',
+            'background-size': 'cover' });
+      });
+
+      hammertime.on('swiperight', function(ev) {
+        $('#cats').text('right');
+        $('body').css({
+            'background': 'url(/images/portfolio/web-size/germany-2.webp) no-repeat left center',
+            'background-size': 'cover' });
+      });
+  });
+</script>

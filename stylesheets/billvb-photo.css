@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700);
 
+html, body {
+        height: 100%;
+}
+.fill-height {
+        min-height: 100%;
+        height:auto !important; /* cross-browser */
+        height: 100%; /* cross-browser */
+}
+
 .billvb-content img {
     max-width: 100%;
 }
@@ -41,37 +50,37 @@
     border: none;
 }
 
+.photo-content {
+    margin-top: 25px;
+}
+
 .thumbnail img {
     max-width: 100%;
 }
 
+.home-menu {
+    text-align: right;
+}
 
 .home-menu h1 {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
     font: 24pt Sans-Serif;
     font-weight: 100;
-    background: rgba(255, 255, 255, 0.8);
-    position: fixed;
-    top: 20px;
-    padding: 5px;
+    vertical-align: top;
+    padding: 10px 15px;
     margin: 0;
     margin-top: 10px;
-    width: 18%;
     text-align: right;
-    left: 5%;
     z-index: 10000;
 }
 
 .home-menu ul {
-    min-width: 300px;
-    position: fixed;
-    top: 0;
-    left: 25%;
-    z-index:10000;
+    display: inline-block;
+    z-index: 10000;
     background: rgba(255, 255, 255, 0.0);
     margin: 0;
     padding: 0;
-    padding-top: 20px;
-    margin-top: 0px;
     list-style-type: none;
 }
 

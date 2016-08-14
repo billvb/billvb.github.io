@@ -4,126 +4,93 @@ subTitle:
 layout: min
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
-
 <style>
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    background-color: #000;
+body {
+    background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: #000 !important;
+    background-attachment: fixed;
 }
 
-.fixed-menu {
-    aaaposition: fixed;
-    aaatop: 5%;
-    z-index: 1000;
+.update {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
 }
-
-.swiper-container {
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide { 
-    background: rgba(0,0,0,1);
-    width: 100%;
-    max-height: 100%;
-}
-
-.caption {
-    position: absolute;
-    bottom: 12%;
-    left: 0%;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.35);
-    padding: 4px 8px;
-    color: white;
-    font-weight: 400;
-    font: 14pt Sans-Serif;
+.update img {
+    max-width: 100%
 }
 </style>
 
-<div class="swiper-container">
-        <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(/images/portfolio/lao-monks-xl.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">luang prabang</p>
+<div class="container">
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="home-menu">
+                    {% include photo-menu.html %}
+                    </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/luang-prabang-rock-overlook.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/ds-sp-engagement.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">engagement</p>
-                </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7325/16357733925_36cc75ed93_h_d.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7388/16171524579_9204c1047e_h_d.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/lutherville-stream-vert1.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">lutherville, md</p>
-                </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7272/7011463373_cfdf364b92_o_d.jpg) no-repeat center center; background-size: cover;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">chianti</p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-hor1.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-bw2.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption"></p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-1.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">greenspring valley, md</p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-2.jpg) no-repeat center center; background-size: cover;">
-                        <p class="caption">greenspring valley, md</p>
+                <div class="col-md-8 photo-content">
+                    <div class="update">
+                       <h2>My Title</h2>
+                       <img src="/images/portfolio/lao-monks-xl.jpg">
+                    </div>
+                    
+                    <div class="update">
+                       <h2>My Title</h2>
+                       <img src="/images/portfolio/ds-sp-engagement.jpg">
+                    </div>
                 </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-</div>
-
-<div class="fixed-menu home-menu">
-{% include photo-menu.html %}
 </div>
 
 
-<!-- Initialize Swiper -->
 <script>
-        var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        grabCursor: true
-        });
+
+var album_index = 0;
+var album_images = [
+    {
+        'background': 'url(/images/portfolio/lao-monks-xl.jpg) no-repeat center center',
+        'background-size': 'contain'
+    },
+    {
+        'background': 'url(/images/portfolio/web-size/luang-prabang-rock-overlook.jpg) no-repeat center center',
+        'background-size': 'contain'
+    },
+    {
+        'background': 'url(/images/portfolio/ds-sp-engagement.jpg) no-repeat center center',
+        'background-size': 'contain'
+    },
+    {
+        'background': 'url(https://farm8.staticflickr.com/7325/16357733925_36cc75ed93_h_d.jpg) no-repeat center center',
+        'background-size': 'contain'
+    },
+    {
+        'background': 'url(/images/portfolio/web-size/lutherville-stream-vert1.jpg) no-repeat center center',
+        'background-size': 'contain'
+    }
+    ];
+
+    /*
+    $(document).ready(function () {
+      var hammertime = new Hammer(document.getElementsByTagName('html')[0]);
+      hammertime.on('swipeleft', function(ev) {
+              $('body').css(album_images[album_index++ % album_images.length]); });
+
+      hammertime.on('swiperight', function(ev) {
+              $('body').css(album_images[album_index-- % album_images.length]); });
+    
+      $('body').css(album_images[0]);
+    });
+    */
+
 </script>
+
+<!--
+                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7388/16171524579_9204c1047e_h_d.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7272/7011463373_cfdf364b92_o_d.jpg) no-repeat center center; background-size: cover;">
+                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-hor1.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-bw2.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-1.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-2.jpg) no-repeat center center; background-size: cover;">
+-->
