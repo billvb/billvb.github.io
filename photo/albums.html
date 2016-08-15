@@ -6,91 +6,112 @@ layout: min
 
 <style>
 body {
-    background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center;
+    /*background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center;*/
+    background: rgba(255, 255, 255, 0);
     background-size: cover;
-    background-color: #000 !important;
+    background-color: #fff !important;
     background-attachment: fixed;
+
+    box-shadow: inset 0 0 50px #fff;
 }
 
 .update {
-    padding: 10px;
+    padding: 0px;
     background: rgba(255, 255, 255, 0.8);
     margin-bottom: 10px;
 }
+
 .update img {
-    max-width: 100%
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
 }
+
 </style>
 
 <div class="container">
         <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="home-menu">
                     {% include photo-menu.html %}
                     </div>
                 </div>
-                <div class="col-md-8 photo-content">
+                <div class="col-md-8 col-md-offset-1">
                     <div class="update">
-                       <h2>My Title</h2>
+                       <img src="/images/portfolio/chianti-countryside-xl.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-8">
+                    <div class="update">
                        <img src="/images/portfolio/lao-monks-xl.jpg">
                     </div>
-                    
+                </div>
+                <div class="col-md-4">
                     <div class="update">
-                       <h2>My Title</h2>
                        <img src="/images/portfolio/ds-sp-engagement.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="update">
+                       <img src="/images/portfolio/lutherville-stream-vert1.jpg">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="update">
+                       <img src="/images/portfolio/greenspring-valley-3.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="update">
+                       <img src="/images/portfolio/web-size/germany-1.webp">
                     </div>
                 </div>
         </div>
 </div>
 
+<div id="users-device-size">
+    <div id="xs" class="visible-xs"></div>
+    <div id="sm" class="visible-sm"></div>
+    <div id="md" class="visible-md"></div>
+    <div id="lg" class="visible-lg"></div>
+</div>
 
 <script>
 
-var album_index = 0;
-var album_images = [
-    {
-        'background': 'url(/images/portfolio/lao-monks-xl.jpg) no-repeat center center',
-        'background-size': 'contain'
-    },
-    {
-        'background': 'url(/images/portfolio/web-size/luang-prabang-rock-overlook.jpg) no-repeat center center',
-        'background-size': 'contain'
-    },
-    {
-        'background': 'url(/images/portfolio/ds-sp-engagement.jpg) no-repeat center center',
-        'background-size': 'contain'
-    },
-    {
-        'background': 'url(https://farm8.staticflickr.com/7325/16357733925_36cc75ed93_h_d.jpg) no-repeat center center',
-        'background-size': 'contain'
-    },
-    {
-        'background': 'url(/images/portfolio/web-size/lutherville-stream-vert1.jpg) no-repeat center center',
-        'background-size': 'contain'
-    }
-    ];
+function getBootstrapDeviceSize() {
+    return $('#users-device-size').find('div:visible').first().attr('id');
+}
 
-    /*
-    $(document).ready(function () {
-      var hammertime = new Hammer(document.getElementsByTagName('html')[0]);
-      hammertime.on('swipeleft', function(ev) {
-              $('body').css(album_images[album_index++ % album_images.length]); });
+function normalizeImagesOnRow() {
+    $('.row').each(function (index, val) {
+      var minHeight = 100*100;
 
-      hammertime.on('swiperight', function(ev) {
-              $('body').css(album_images[album_index-- % album_images.length]); });
-    
-      $('body').css(album_images[0]);
+      $(val).find('.update img').each(function (idx, update_val) {
+        if ($(update_val).height() < minHeight) {
+          minHeight = $(update_val).height();
+        }
+      });
+
+      if (minHeight < 100*100) {
+        $(val).find('.update img').each(function (idx, update_val) {
+          $(update_val).height(minHeight);
+        });
+      }
     });
-    */
+}
+
+
+$(document).ready(function() {
+  console.log("Normalizing");
+  normalizeImagesOnRow();
+});
+
 
 </script>
 
-<!--
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7388/16171524579_9204c1047e_h_d.jpg) no-repeat center center; background-size: contain;">
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7272/7011463373_cfdf364b92_o_d.jpg) no-repeat center center; background-size: cover;">
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center; background-size: contain;">
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-hor1.jpg) no-repeat center center; background-size: contain;">
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-bw2.jpg) no-repeat center center; background-size: contain;">
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-1.jpg) no-repeat center center; background-size: contain;">
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-2.jpg) no-repeat center center; background-size: cover;">
--->
