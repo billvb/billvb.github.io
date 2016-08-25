@@ -6,101 +6,55 @@ layout: min
 
 <style>
 body {
-        /*background: url(https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg) no-repeat center center;*/
+        /*background-image: url(https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg) no-repeat center center;*/
         background-attachment: fixed;
         background-size: cover;
         background-color: #fff !important;
 }
 
-#message-form {
-    padding: 1em;
-    background-color: rgba(233,233,233, 0.7);
-}
-
-.text-background {
-    margin-top: 1em;
-    padding: 1em;
-    background-color: rgba(233, 233, 233, 0.7);
-    color: #222;
-}
-
-.text-background p,
-#message-form p {
-    font-weight: 400;
-    color: #555555;
-    font-size: 13pt;
-}
-
-input, textarea {
-    background-color: #000;
-    color: black;
-    border-width: 1px solid #000 !important;
-}
-
+img { max-width: 100%; margin-top: 10px; margin-bottom: 10px;}
 </style>
 
 <div class="container">
-<div class="row">
-    <div class="col-md-3">
-        <div class="home-menu">
-        {% include photo-menu.html %}
+        <div class="row">
+                <div class="col-md-3">
+                        <div class="home-menu">
+                                {% include photo-menu.html %}
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <h1>Contact Me</h1>
+                        <p>To get in touch, the best way is via email:
+                        <br /><br /><i><b>blank@example.com</b></i></p>
+                        <hr />
+                </div>
         </div>
-    </div>
-    <div class="col-md-9 photo-content">
-        <form class="form-horizontal" id="message-form">
-            <fieldset>
-                <p>To drop a line</p>
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <div class="col-xs-12">
-                        <input id="user-email" name="user-email" type="text" placeholder="Your E-mail Address" class="form-control input-md" required="">
-                    </div>
+        <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                  <h2>Architecture</h2>
+                  <p>Starting at <b>&#3647;3000.</b></p><p>Bullshit, bullshit</p>
                 </div>
-
-                <!-- Textarea -->
-                <div class="form-group">
-                    <div class="col-xs-12">                     
-                        <textarea class="form-control" id="user-message" name="user-message" required="" placeholder="Your Message"></textarea>
-                    </div>
+                <div class="col-md-4">
+                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
                 </div>
-
-                <!-- Button -->
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <button id="form-submit-button" name="form-submit-button" class="btn btn-primary">Submit</button>
-                    </div>
+        </div>
+        <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                  <h2>Portraits</h2>
+                  <p>Professional or lifestyle.</p>
+                  <p>Starting at <b>&#8362;400.</b></p>
                 </div>
-
-            </fieldset>
-        </form>
-    </div>
+                <div class="col-md-4">
+                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                  <h2>Extra Bullshit</h2>
+                  <p></p>
+                </div>
+                <div class="col-md-4">
+                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
+                </div>
+        </div>
 </div>
-</div>
-
-<script>
-    var clear_to_submit = true;
-
-    $('#form-submit-button').click( function(e) {
-        e.preventDefault();
-
-        if (!clear_to_submit) {
-            console.log("Already submitted form once.");
-        }
-
-        $.post("http://dev.billvb.com:90/photo-contact", {
-                "user-name": $('#user-name').val(),
-                "user-email": $('#user-email').val(),
-                "user-message": $('#user-message').val()
-                })
-            .done(function (succ) {
-                clear_to_submit = false;
-                $('#message-form').html('<p>Got it, thanks!</p>').fadeIn(1000);
-            })
-            .fail(function (err) {
-                console.log('Cannot submit...');
-                console.log(err);
-                $('#message-form').html('<p>Sorry, this is not working. Just email me dog@catstein.com</p>').fadeIn(1000);
-            });
-    });
-</script>

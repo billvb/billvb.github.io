@@ -6,13 +6,10 @@ layout: min
 
 <style>
 body {
-        background: url(/images/portfolio/web-size/germany-1.webp) no-repeat left center;
+        background: url(/images/portfolio/germany-1-16x9.jpg) no-repeat left center;
         background-size: cover;
         background-attachment: fixed;
 }
-
-.home-menu {
-        text-align: right; }
 </style>
 
 <div class="container">
@@ -23,12 +20,17 @@ body {
                     </div>
                 </div>
                 <div class="col-md-9 photo-content">
-                Cats
                 </div>
         </div>
 </div>
 
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
 <script>
+/*
   $(document).ready(function () {
       var hammertime = new Hammer(document.getElementsByTagName('html')[0]);
       hammertime.on('swipeleft', function(ev) {
@@ -45,4 +47,18 @@ body {
             'background-size': 'cover' });
       });
   });
+*/
+
+function isBreakpoint( alias ) {
+  return $('.device-' + alias).is(':visible');
+}
+
+$(document).ready(function() {
+  if (isBreakpoint("xs")) {
+    $('body').css("background", "url(/images/imports/lutherville-stream-6-2x3.jpg)");
+    $('body').css("background-size", "contain");
+  } else {
+    $('body').css("background", "url(/images/portfolio/germany-1-16x9.jpg) no-repeat left center");
+  }
+});
 </script>

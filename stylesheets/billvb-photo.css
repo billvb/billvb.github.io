@@ -1,86 +1,45 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 html, body {
         height: 100%;
 }
 
-.fill-height {
-        min-height: 100%;
-        height:auto !important; /* cross-browser */
-        height: 100%; /* cross-browser */
-}
-
-.billvb-content img {
-    max-width: 100%;
-}
-
-.billvb-content p {
-    font-weight: 400;
-    font: 14pt/1.5 Merriweather;
-    color: #555;
-}
-
-.billvb-content h1,
-.billvb-content h2{
-    padding-top: 2em;
-    padding-bottom: 0.75em;
-}
-
-/* ----- */
-
-.billvb-basic p {
-    font-weight: 400;
-    font: 13pt/1.5 Merriweather;
-    color: #555;
-}
-
-.billvb-light {
+h1, h2, h3 {
     font-weight: 300;
-    font-size: 13pt;
-    color: #555;
+    font-family: Lato, sans-serif;
+    color: #000;
 }
 
-
-.album-intro {
-    text-align: center;
-    color: #888;
-}
-
-.thumbnail {
-    text-align: center;
-    border: none;
-}
-
-.photo-content {
-    margin-top: 25px;
-}
-
-.thumbnail img {
-    max-width: 100%;
+p {
+  font-size: 14pt;
+  font: 12pt/1.5 Merriweather;
+  font-weight: 300;
 }
 
 .home-menu {
-    text-align: right;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: white 0px 0px 10px;
+    border-top: 10px solid #FFa500;
+    text-align: left;
+    border-bottom: 5px solid black;
+    margin-bottom: 20px;
 }
 
 .home-menu h1 {
     display: inline-block;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    font: 24pt Sans-Serif;
-    font-weight: 100;
+    font: 24pt Lato;
+    font-weight: 300;
     vertical-align: top;
     padding: 10px 15px;
     margin: 0;
-    margin-top: 10px;
-    text-align: right;
     z-index: 10000;
 }
 
 .home-menu ul {
     display: inline-block;
     z-index: 10000;
-    background: rgba(255, 255, 255, 0.0);
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -90,13 +49,12 @@ html, body {
 .home-menu ul a {
     display: inline-block;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px 15px;
-    color: #227;
-    font: 16pt Sans-Serif;
-    font-weight: 100;
+    color: #000;
+    font: 16pt Lato;
+    font-weight: 300;
 }
 
 .home-menu ul a:hover, 
