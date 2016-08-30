@@ -6,9 +6,7 @@ layout: min
 
 <style>
 body {
-        background: url(/images/portfolio/germany-1-16x9.jpg) no-repeat left center;
-        background-size: cover;
-        background-attachment: fixed;
+        height: 100%;
 }
 </style>
 
@@ -30,35 +28,19 @@ body {
 <div class="device-lg visible-lg"></div>
 
 <script>
-/*
-  $(document).ready(function () {
-      var hammertime = new Hammer(document.getElementsByTagName('html')[0]);
-      hammertime.on('swipeleft', function(ev) {
-        $('#cats').text('left');
-        $('body').css({
-            'background': 'url(/images/portfolio/web-size/germany-1.webp) no-repeat left center',
-            'background-size': 'cover' });
-      });
-
-      hammertime.on('swiperight', function(ev) {
-        $('#cats').text('right');
-        $('body').css({
-            'background': 'url(/images/portfolio/web-size/germany-2.webp) no-repeat left center',
-            'background-size': 'cover' });
-      });
-  });
-*/
-
 function isBreakpoint( alias ) {
   return $('.device-' + alias).is(':visible');
 }
 
 $(document).ready(function() {
   if (isBreakpoint("xs")) {
-    $('body').css("background", "url(/images/imports/lutherville-stream-6-2x3.jpg)");
-    $('body').css("background-size", "contain");
+    var verts = ["/resources/images/NewSamples/BVBPhoto-115-2736_x_4104.jpg",
+                 "/resources/images/NewSamples/BVBPhoto-110-3648_x_5472.jpg"];
+
+    $('body').css("background", "url(" + verts[1] + ")");
+    $('body').css("background-size", "cover");
   } else {
-    $('body').css("background", "url(/images/portfolio/germany-1-16x9.jpg) no-repeat left center");
+    $('body').css("background", "url(/resources/images/portfolio/germany-1-16x9.jpg) no-repeat left center");
   }
 });
 </script>

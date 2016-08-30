@@ -11,26 +11,24 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/stylesheets/photoswipe.css"> 
-    <link rel="stylesheet" href="/stylesheets/default-skin/default-skin.css"> 
+    <link href="/resources/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/resources/stylesheets/photoswipe.css"> 
+    <link rel="stylesheet" href="/resources/stylesheets/default-skin/default-skin.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
 
-    <link href="/stylesheets/billvb-photo.css" rel="stylesheet"/>
+    <link href="/resources/stylesheets/billvb-photo.css" rel="stylesheet"/>
 
 
     <!-- Custom Fonts -->
-    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/hammer.min.js"></script>
-
-    <script src="/javascripts/photoswipe.min.js"></script> 
-    <script src="/javascripts/photoswipe-ui-default.min.js"></script> 
-
+    <script src="/resources/javascripts/bootstrap.min.js"></script>
+    <script src="/resources/javascripts/photoswipe/photoswipe.min.js"></script> 
+    <script src="/resources/javascripts/photoswipe/photoswipe-ui-default.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
     
     {{ content }}
 

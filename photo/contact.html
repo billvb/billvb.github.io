@@ -6,13 +6,21 @@ layout: min
 
 <style>
 body {
-        /*background-image: url(https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg) no-repeat center center;*/
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: #fff !important;
+    background-color: #000002;
 }
 
-img { max-width: 100%; margin-top: 10px; margin-bottom: 10px;}
+h1, h2, h3, p, .home-menu ul a {
+    /*text-shadow: none;
+    color: #ccf;*/
+}
+
+.contact-content {
+  padding-top: 10px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+
 </style>
 
 <div class="container">
@@ -22,39 +30,44 @@ img { max-width: 100%; margin-top: 10px; margin-bottom: 10px;}
                                 {% include photo-menu.html %}
                         </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-8 contact-content">
                         <h1>Contact Me</h1>
                         <p>To get in touch, the best way is via email:
                         <br /><br /><i><b>blank@example.com</b></i></p>
-                        <hr />
-                </div>
-        </div>
-        <div class="row">
-                <div class="col-md-4 col-md-offset-3">
-                  <h2>Architecture</h2>
-                  <p>Starting at <b>&#3647;3000.</b></p><p>Bullshit, bullshit</p>
-                </div>
-                <div class="col-md-4">
-                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
-                </div>
-        </div>
-        <div class="row">
-                <div class="col-md-4 col-md-offset-3">
+
+                        <br /><br />
                   <h2>Portraits</h2>
                   <p>Professional or lifestyle.</p>
-                  <p>Starting at <b>&#8362;400.</b></p>
-                </div>
-                <div class="col-md-4">
-                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
-                </div>
-        </div>
-        <div class="row">
-                <div class="col-md-4 col-md-offset-3">
-                  <h2>Extra Bullshit</h2>
-                  <p></p>
-                </div>
-                <div class="col-md-4">
-                        <img src="https://farm6.staticflickr.com/5325/9012097444_d09445bb27_o_d.jpg" />
+                  <p>Starting at <b>&#8362;399.</b></p>
                 </div>
         </div>
 </div>
+
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
+
+<script>
+function isBreakpoint( alias ) {
+  return $('.device-' + alias).is(':visible');
+}
+
+$(document).ready(function() {
+  if (isBreakpoint("xs")) {
+    var verts = ["/resources/images/NewSamples/BVBPhoto-115-2736_x_4104.jpg",
+                 "/resources/images/NewSamples/BVBPhoto-110-3648_x_5472.jpg"];
+
+    $('body').css("background", "url(/resources/images/NewSamples/BVBPhoto-115-2736_x_4104.jpg) no-repeat center center");
+    $('body').css("background-size", "cover");
+    //$('body').css("background-attachment", "fixed");
+
+    $('.contact-content').css('background', 'rgba(250, 250, 250, 1)');
+  } else {
+    $('body').css("background", "url(/resources/images/portfolio-copy/chianti-countryside-xl-16x9.jpg) no-repeat left center");
+    $('body').css("background-size", "cover");
+    //$('body').css("background-attachment", "fixed");
+  }
+});
+</script>

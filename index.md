@@ -23,7 +23,7 @@ Spending time in the startup world and at the Applied Physics Lab has allowed me
 
 Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, afford a freedom to focus on the other things important in business and life, and serve as a great way to build friendships and thrive off my peers' creativity.
 
-<img id="my-photo" src="/images/BB-10.jpg" />
+<img id="my-photo" src="/resources/images/BB-10.jpg" />
 
 <br />
 The best way for one to reach me is through e-mail: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
