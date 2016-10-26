@@ -3,7 +3,7 @@ title: Home
 layout: base
 ---
 
-I am a multi-disciplinary software engineer living in Washington, DC. Currently I'm a member of the Professional Staff at the **JHU Applied Physics Lab** and - until recently - **Nextility** (an energy services startup), where I've worked on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
+I am a multi-disciplinary software engineer living in Washington, DC. Currently I'm a member of the Professional Staff at the JHU Applied Physics Lab and have spent several years in the startup world, where I've worked on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
 
 <a id="read_less_link" href="#">[Show less]</a>
 
