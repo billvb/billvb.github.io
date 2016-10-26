@@ -3,7 +3,7 @@ title: Home
 layout: base
 ---
 
-I am a multi-disciplinary software engineer living in Washington, DC. Each week I split my time between the **JHU Applied Physics Lab** and and **Nextility** (an energy services startup), where I work on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
+I am a multi-disciplinary software engineer living in Washington, DC. Currently I'm a member of the Professional Staff at the **JHU Applied Physics Lab** and - until recently - **Nextility** (an energy services startup), where I've worked on a range of efforts including embedded spacecraft software technologies to cloud based business backends.
 
 <a id="read_less_link" href="#">[Show less]</a>
 
@@ -12,7 +12,7 @@ I spend most of my time in the spacecraft flight software group at the Johns Hop
 </span>
 
 <span class="read_more_content">
-In 2013 I also became a member of the tech team at Nextility, a rapidly-growing energy-services startup located in DC, where I spend a few days each week. My work there has included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from major East Coast gas and electricity utilities, which is one of the key ingredients for enabling our brokerage line-of-business.
+From 2013 until 2016 I also became a member of the tech team at Nextility, a rapidly-growing energy-services startup located in DC, where I spent a few days each week. My work there included the development of SCADA systems for solar hardware and a framework to collect and normalize daily pricing data from major East Coast gas and electricity utilities, which is one of the key ingredients for enabling its brokerage line-of-business.
 </span>
 
 <span class="read_more_content">
