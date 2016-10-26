@@ -41,12 +41,28 @@ Another major effort included the development of a SCADA system for the monitori
 *2006 (Funded by National Science Foundation):* Developed an application to maintain calibration data for a particle accelerator.
 
 
-### Education: George Washington University
+### Education
 
-**M.Sc.** (2010), **B.Sc.** (2009). Computer Science, focus in info security.
+**M.Sc.**, **B.Sc.** in Computer Science (2010, 2009 George Washington University). Focus in info security.
 
 Fully sponsored 2008-10 under the National Science Foundation Cyber Corps fellowship.
 
-### Publications, Skills, etc
+### Publications, Presentations, Etc.
 
-Detailed in the [full resume PDF](/vanbesien_resume_201604.pdf).
+_Maximizing Data Return for the Europa Lander: A Trade Study in the Application of CCSDS Protocols_ (Co-Author). Published in the Proceedings of the 2017 IEEE Aerospace Conference. Big Sky, MT. March 2017.
+
+_State Modeling and Remediation for Autonomous UAV Operations_ (Co-Author). Presented at the 2016 Workshop on Spacecraft Flight Software at the California Institute of Technology. Pasadena, CA. December 2016.
+
+_Ground Operations Emulation for On-Orbit Telerobotics_ (Co-Author). Published in the Proceedings of the NSBE Aerospace Systems Conference. Arlington, VA. August 2016.
+
+_Safe Testing of Autonomy in Complex, Interactive Environments_ (Co-Author). Presented at the 2016 Safe and Secure Systems and Software Symposium. Dayton, OH. July 2016.
+
+_SpaceDrone: Enterprising the Mission-Independent APL Spacecraft Flight Software_ (w/Team). Recipient of 2015 Johns Hopkins University APL Technical Achievement Award. June 2015.
+
+_Investigating Model-Based Autonomy for Solar Probe Plus_. Presented at the 2013 Workshop on Spacecraft Flight Software at the California Institute of Technology. December 2013.
+
+_Protecting Against DNS Cache-Poisoning Attacks_ (Co-Author). Presented and Published in the Proceedings of the 6th IEEE ICNP Workshop on Secure Network Protocols. Kyoto, Japan. October 2010.
+
+_Dynamic, Non-Interactive Key Management for the Bundle Protocol_. Presented and Published in the Proceedings of the 5th ACM MobiCom Workshop on Challenged Networks. Chicago, IL. September 2010.
+
+More in the [full resume PDF](/vanbesien_resume_201604.pdf).
