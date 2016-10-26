@@ -4,25 +4,36 @@ subTitle:
 layout: min
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
-
 <style>
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    background-color: #000;
+html {
 }
 
-.fixed-menu {
-    position: fixed;
-    top: 5%;
-    z-index: 1000;
+body {
+  height: 100%;
+  background-color: #000003;
 }
+
+h1, h2, h3, p, .home-menu ul a {
+    text-shadow: none;
+    color: #ccf;
+}
+
+.update {
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.update img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto;
+    max-width: 100%;
+}
+
 
 .swiper-container {
-    height: 100%;
+    height: 600px;
+    background: rgba(0, 0, 0, 0);
     max-height: 100%;
     width: 100%;
     margin-top: 0;
@@ -49,7 +60,7 @@ html, body {
 }
 
 .swiper-slide { 
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,0);
     width: 100%;
     max-height: 100%;
 }
@@ -65,65 +76,232 @@ html, body {
     font-weight: 400;
     font: 14pt Sans-Serif;
 }
+
 </style>
 
+<div class="container">
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="home-menu">
+                    {% include photo-menu.html %}
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-1">
+                    <h2>The Album</h2>
+                    <p>A collection of portraits from over the years.</p>
+                </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
 <div class="swiper-container">
         <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(/images/portfolio/lao-monks-xl.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">luang prabang</p>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-105-3168_x_4752.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Jerusalem</p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/luang-prabang-rock-overlook.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-112-2736_x_1824.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/ds-sp-engagement.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">engagement</p>
-                </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7325/16357733925_36cc75ed93_h_d.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-101-3816_x_2542.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7388/16171524579_9204c1047e_h_d.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/cm-1-2x3.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/lutherville-stream-vert1.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">lutherville, md</p>
-                </div>
-                <div class="swiper-slide" style="background: url(https://farm8.staticflickr.com/7272/7011463373_cfdf364b92_o_d.jpg) no-repeat center center; background-size: cover;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-111-1824_x_2736.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/chianti-countryside-edit-xl.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">chianti</p>
-                </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-hor1.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-110-3648_x_5472.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/ayutaya-bw2.jpg) no-repeat center center; background-size: contain;">
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-104-4752_x_3168.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Sunrise in Greenspring Valley, MD</p>
+                </div>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-117-4104_x_2736.jpg) no-repeat center center; background-size: contain;">
                         <p class="caption"></p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-1.jpg) no-repeat center center; background-size: contain;">
-                        <p class="caption">greenspring valley, md</p>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-116-4104_x_2736.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Bavarian Alps</p>
                 </div>
-                <div class="swiper-slide" style="background: url(/images/portfolio/web-size/greenspring-valley-2.jpg) no-repeat center center; background-size: cover;">
-                        <p class="caption">greenspring valley, md</p>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-109-3168_x_4752.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Lutherville, MD</p>
+                </div>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-102-4752_x_3168.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">The Arboretum</p>
+                </div>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-113-2736_x_4104.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Chiang Mai</p>
+                </div>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-118-4104_x_2736.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Engagement </p>
+                </div>
+                <div class="swiper-slide" style="background: url(/resources/images/NewSamples/BVBPhoto-114-4104_x_2736.jpg) no-repeat center center; background-size: contain;">
+                        <p class="caption">Thailand</p>
                 </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 </div>
+          </div>
+        </div>
 
-<div class="fixed-menu home-menu">
-{% include photo-menu.html %}
+
+        <!--
+        <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/portfolio/ayutaya-bw1-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/lenka-bw2-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="update">
+                          <img src="/resources/images/imports/hk1-3x2.jpg">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="update">
+                          <img src="/resources/images/imports/hk1-3x2.jpg">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="update">
+                          <img src="/resources/images/imports/hk1-3x2.jpg">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="update">
+                          <img src="/resources/images/imports/kolipe1-3x2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/kolipe1-3x2.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/hk1-3x2.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/portfolio/ayutaya-bw1-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/lenka-bw2-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/lenka-bw1-3x2.jpg">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/portfolio/ayutaya-bw1-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <div class="update">
+                       <img src="/resources/images/imports/cm-2-2x3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Profound Bullshit</h3>
+                    <p>Inspiring text goes here</p>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="update">
+                       <img src="/resources/images/portfolio/germany-1-16x9.jpg">
+                    </div>
+                </div>
+        </div>
+        -->
 </div>
 
 
-<!-- Initialize Swiper -->
+<div id="users-device-size">
+    <div id="xs" class="visible-xs"></div>
+    <div id="sm" class="visible-sm"></div>
+    <div id="md" class="visible-md"></div>
+    <div id="lg" class="visible-lg"></div>
+</div>
+
 <script>
-        var swiper = new Swiper('.swiper-container', {
+
+var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30,
         grabCursor: true
+});
+
+$('.swiper-container').click(function(e) { e.preventDefault(); swiper.slideNext(); });
+
+function getBootstrapDeviceSize() {
+    return $('#users-device-size').find('div:visible').first().attr('id');
+}
+
+$(document).ready(function(){
+  $('.swiper-container').height(Math.min(700, $(window).height() - 30));
+  $('.swiper-container').css("margin-bottom", 20);
+});
+
+window.onload = function() {
+    $('html, body').animate({ scrollTop: $(document).height() }, 1000); 
+};
+
+function normalizeImagesOnRow() {
+    $('.row').each(function (index, val) {
+      var minHeight = 100*100;
+
+      $(val).find('.update img').each(function (idx, update_val) {
+        if ($(update_val).height() < minHeight) {
+          minHeight = $(update_val).height();
+        }
+      });
+
+      if (minHeight < 100*100 && minHeight > 0) {
+        $(val).find('.update img').each(function (idx, update_val) {
+          $(update_val).height(minHeight);
         });
+      }
+    });
+}
+
+
+/*
+$(document).ready(function() {
+  console.log("Normalizing");
+  normalizeImagesOnRow();
+});
+
+$('body').click(function () {
+  console.log("Normalizing");
+  normalizeImagesOnRow();
+});
+*/
+
 </script>
+

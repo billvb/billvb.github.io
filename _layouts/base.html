@@ -8,14 +8,13 @@
     <title>{{ page.title }} - Bill Van Besien.</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/stylesheets/billvb.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    </script>
+    <link href="/resources/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/resources/stylesheets/billvb.css" rel="stylesheet">
   </head>
 
   <body>
+
     <div class="container">
         <div class="page-header">
             <div id="decal"></div>
@@ -31,13 +30,16 @@
             </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12 billvb-content">{{ content }}</div>
+        <div class="col-lg-12 col-sm-12 col-md-12 billvb-content">
+          {{ content }}
+        </div>
       </div>
     </div> <!-- /container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/resources/javascripts/bootstrap.min.js"></script>
     <script>
         $.post("http://dev.billvb.com:90/log",
                {site: "github",
