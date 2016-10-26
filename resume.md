@@ -22,7 +22,7 @@ Served as a Flight Controller during the launch and commissioning phase of the N
 
 ###### Software Projects Lead
 
-*2013 &mdash; Present (Part-time):* Developed, scaled and operated a major software system to enable Nextility's key line-of-business and competitive advantage. This system served to aggregate and normalize the millions of daily power and gas price quotes from dozens of utility companies, and feed them into a front-end for Nextility's customers and partners to ensure they get the lowest possible price for their power and gas service.
+*2013 &mdash; 2016 (Part-time):* Developed, scaled and operated a major software system to enable Nextility's key line-of-business and competitive advantage. This system served to aggregate and normalize the millions of daily power and gas price quotes from dozens of utility companies, and feed them into a front-end for Nextility's customers and partners to ensure they get the lowest possible price for their power and gas service.
 
 Another major effort included the development of a SCADA system for the monitoring, control, metering and diagnostics of solar installations. This involved the development of a full-stack hardware-software solution, from cloud-based backends interfacing over cell networks to embedded components on serial buses.
 
