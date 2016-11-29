@@ -3,8 +3,6 @@ title: Projects
 layout: base
 ---
 
-## More Information
-
 This page is intended to go into a little bit more depth on some of the activities I've been involved in over the past few years. It's not meant to be exhaustive.
 
 
