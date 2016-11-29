@@ -21,7 +21,7 @@ Spending time in the startup world and at the Applied Physics Lab has allowed me
 
 <a id="read_more_link" href="#">[Show more]</a>
 
-Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, afford a freedom to focus on the other things important in business and life, and serve as a great way to build friendships and thrive off my peers' creativity.
+Informed by almost a decade of experience, it's been my observation that developing software *well* can be immensely gratifying, afford a freedom to focus on the other things important in business and life, and thrive off my peers' creativity.
 
 <img id="my-photo" src="/resources/images/BB-10.jpg" />
 
