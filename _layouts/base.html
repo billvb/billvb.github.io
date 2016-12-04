@@ -41,11 +41,6 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="/resources/javascripts/bootstrap.min.js"></script>
     <script>
-        $.post("http://dev.billvb.com:90/log",
-               {site: "github",
-                page: $(location).attr('href'),
-                referrer: document.referrer});
-        
         $(document).ready(function() {
           $('.read_more_content').parent().hide();
           $('#read_less_link').parent().hide();
@@ -62,12 +57,15 @@
           $('#read_more_link').hide();
           $('#read_less_link').parent().show();
           $('.read_more_content').parent().show(400);
-          
-          $.post("http://dev.billvb.com:90/log",
-               {site: "github",
-                page: 'read_more',
-                referrer: ""});
         });
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-88443617-1', 'auto');
+		ga('send', 'pageview');
     </script>
   </body>
 </html>
