@@ -24,5 +24,5 @@ Informed by almost a decade of experience, it's been my observation that develop
 <img id="my-photo" src="/resources/images/BB-10.jpg" />
 
 <br />
-The best way for one to reach me is through e-mail: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
+The best way for one to reach me is through e-mail: [vanbesien@gmail.com](mailto:vanbesien@gmail.com). I also have a [developer story on StackOverflow](http://stackoverflow.com/story/billvb).
 
