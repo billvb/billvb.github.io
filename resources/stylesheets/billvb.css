@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700);
 
 body {
+    border-top: 1px solid black;
     font: 12pt/1.5 Merriweather;
     font-weight: 300;
     color: #393D44;
@@ -16,7 +17,8 @@ h3 {
 }
 
 #heading {
-    border-left: 5px solid #E30B5D;
+    xborder-left: 5px solid #E30B5D;
+    border-left: 5px solid #393D44;
     padding-left: 15px;
 }
 
@@ -75,3 +77,4 @@ p {
     max-width: 120px;
     border-radius: 50%;
 }
+
