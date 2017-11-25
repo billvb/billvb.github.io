@@ -3,19 +3,22 @@ title: Resume
 layout: base
 ---
 
-_Note:_ *The resume on this page is abbreviated, download the [full resume as PDF, 2016](/resources/vanbesien_resume_201604.pdf)*
+### Gigantum
 
-### JHU Applied Physics Lab
+###### Platform Developer and Partner
 
-###### Software Team Lead, Professional Staff
+*2017 &mdash; present*: Design and deliver core services for product accelerating scientific research. Work extensively with partners from major tech companies and academia to deliver high-quality, reproducible results.
 
-*2008 &mdash; Present:* Research, develop, and integrate novel technologies into NASA space missions, including for purposes of autonomy/safety, networking, and cyber security.
 
-Currently serving as the software team lead on a product for air traffic control to ensure manned and unmanned aircraft (drones) operate safely together in the national airspace. This involves researching inference engines and corresponding approaches to formal verification, developing high-quality, high-reliability software for the safety-critical environment, and bringing the product to operational capacity for air traffic control and flight test managers.
+### Johns Hopkins University Applied Physics Lab
 
-Other ongoing efforts involve advocating for APL's mission-independent spacecraft flight software - specifically to demonstrate its enterprise value and suitability for "operationalizing" off-the-shelf UAV/drone fleets and missions.
+###### Principal Investigator, Project Manager, and Professional Staff
 
-Served as a Flight Controller during the launch and commissioning phase of the NASA Van Allen Probes mission. Acquired invaluable experience operating high-profile, mission-critical assets and being part of the multi-disciplinary, 24/7 team of engineers, analysts, and controllers. Prior to serving in this role, I developed software tools in support of the NASA Messenger mission to Mercury.
+*2008 &mdash; 2017*: Researched, developed, and integrated novel technologies into NASA space missions, including for purposes of autonomy/safety, networking, and cyber security.
+
+Led software team as Principal Investigator on a product for air traffic control to ensure manned and unmanned aircraft (drones) operate safely together in the national airspace. Researched inference engines and corresponding approaches to formal verification, developed high-quality, high-reliability software for the safety-critical environment, and brought the service to operational capacity for air traffic control and flight test managers.
+
+Served as a Flight Controller during the launch and commissioning phase of the NASA Van Allen Probes mission. Acquired invaluable experience operating high-profile, mission-critical assets and being part of the multi-disciplinary, 24/7 team of engineers, analysts, and controllers. Prior to serving in this role, developed software tools in support of the NASA Messenger mission to Mercury.
 
 
 ### Nextility
@@ -43,7 +46,7 @@ Another major effort included the development of a SCADA system for the monitori
 
 ### Education
 
-**M.Sc.**, **B.Sc.** in Computer Science (2010, 2009 George Washington University). Focus in info security.
+**M.Sc.**, **B.Sc.** in Computer Science (2010, 2009 George Washington University). Focus in information security.
 
 Fully sponsored 2008-10 under the National Science Foundation Cyber Corps fellowship.
 

@@ -53,7 +53,7 @@ p {
 
 .nav-pills>li>a:hover,
 .nav-pills>li>a:focus {
-    background-color: #fff;
+    background-color: transparent;
     color: #428bca;
     border: 1px solid transparent;
     border-bottom: 1px solid #ccc;
