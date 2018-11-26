@@ -5,9 +5,10 @@ layout: base
 
 ### Gigantum
 
-###### Platform Developer and Partner
+###### Principal Software Engineer and Partner
 
-*2017 &mdash; present*: Design and deliver core services for product accelerating scientific research. Work extensively with partners from major tech companies and academia to deliver high-quality, reproducible results.
+*2017 &mdash; present*: Design and deliver core services for product accelerating scientific research.
+Work extensively with partners from major tech companies and academia to deliver high-quality, reproducible results.
 
 
 ### Johns Hopkins University Applied Physics Lab

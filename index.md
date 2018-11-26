@@ -3,7 +3,7 @@ title: Home
 layout: base
 ---
 
-Currently I'm a platform developer and partner at Gigantum, a DC-based firm developing a product solving major problems in academic data-intensive research. 
+Currently I'm the Principal Software Engineer and partner at Gigantum, a DC-based firm developing a product solving major problems in academic data-intensive research. 
 
 I spent almost a decade at the Johns Hopkins Applied Physics Lab, where I've worked on a range of efforts including deep-space telecommunications for NASA missions, spacecraft autonomy, and other unmanned aerospace systems.
 
