@@ -10,4 +10,3 @@ I spent almost a decade at the Johns Hopkins Applied Physics Lab, where I've wor
 My principal interest is in taking an innovative new technology out of the lab, maturing it, and delivering it as a hardened, operational product.
 
 Email is the best way to reach me: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
-
