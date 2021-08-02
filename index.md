@@ -3,10 +3,13 @@ title: Home
 layout: base
 ---
 
-Currently I'm the Principal Software Engineer and partner at Gigantum, a DC-based firm developing a product solving major problems in academic data-intensive research. 
+For nearly a decade, I developed telecoms, autonomy and other mission-critical software for NASA spacecraft and emerging technologies. Since then, I supported startups and other tech companies to enhance the rigor and maturity of their systems and development practices.
 
-I spent almost a decade at the Johns Hopkins Applied Physics Lab, where I've worked on a range of efforts including deep-space telecommunications for NASA missions, spacecraft autonomy, and other unmanned aerospace systems.
 
-My principal interest is in taking an innovative new technology out of the lab, maturing it, and delivering it as a hardened, operational product.
+### Tech Stack
 
-Email is the best way to reach me: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
+Much of my work covers the following: Distributed and Networked systems, Embedded Systems, the Rust Programming Language, Python, the C Programming Language, often in a Linux and Docker-ized environment.
+
+### Contact 
+ * Email: [vanbesien@gmail.com](mailto:vanbesien@gmail.com)
+ * LinkedIn: [https://www.linkedin.com/in/bill-van-besien-9bb25939/](https://www.linkedin.com/in/bill-van-besien-9bb25939/)

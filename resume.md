@@ -3,12 +3,25 @@ title: Resume
 layout: base
 ---
 
+### IOMAXIS, LLC.
+
+###### Senior Software Engineer
+
+*2019 &mdash; present*: Solved difficult problem to provide TCP-like reliability over lossy, one-way network links. Oversaw development and V&V of production-grade implementation in Rust. Published results in the proceedings of the IEEE Aerospace Conference.
+
+Developed protocol for distributed consensus agreement for dynamic route selection in challenging network topology. Prototyped solution, oversaw development of production-grade solution in Rust.
+
+Brought engineering rigor to product development: Distilled customer desires into functional- and performance-requirements; created manual and automated test plans; developed test harnesses in Python to validate system capabilities and benchmark performance.
+
+
 ### Gigantum
 
-###### Principal Software Engineer and Partner
+###### Lead Platform Engineer
 
-*2017 &mdash; present*: Design and deliver core services for product accelerating scientific research.
+*2017 &mdash; 2019*: Designed and delivered core services for product accelerating scientific research.
 Work extensively with partners from major tech companies and academia to deliver high-quality, reproducible results.
+
+Trained software developers, established QA process, and built release and test-harness toolchains.
 
 
 ### Johns Hopkins University Applied Physics Lab
@@ -24,7 +37,7 @@ Served as a Flight Controller during the launch and commissioning phase of the N
 
 ### Nextility
 
-###### Software Projects Lead
+###### Software Engineer
 
 *2013 &mdash; 2016 (Part-time):* Developed, scaled and operated a major software system to enable Nextility's key line-of-business and competitive advantage. This system served to aggregate and normalize the millions of daily power and gas price quotes from dozens of utility companies, and feed them into a front-end for Nextility's customers and partners to ensure they get the lowest possible price for their power and gas service.
 
@@ -53,6 +66,8 @@ Fully sponsored 2008-10 under the National Science Foundation Cyber Corps fellow
 
 ### Publications, Presentations, Etc.
 
+_Reliable, Efficient Large-File Delivery over Lossy, Unidirectional Links_. Published in the Proceedings of the 2021 IEEE Aerospace Conference. Big Sky, MT. March 2021.
+
 _Maximizing Data Return for the Europa Lander: A Trade Study in the Application of CCSDS Protocols_ (Co-Author). Published in the Proceedings of the 2017 IEEE Aerospace Conference. Big Sky, MT. March 2017.
 
 _State Modeling and Remediation for Autonomous UAV Operations_ (Co-Author). Presented at the 2016 Workshop on Spacecraft Flight Software at the California Institute of Technology. Pasadena, CA. December 2016.
@@ -69,4 +84,3 @@ _Protecting Against DNS Cache-Poisoning Attacks_ (Co-Author). Presented and Publ
 
 _Dynamic, Non-Interactive Key Management for the Bundle Protocol_. Presented and Published in the Proceedings of the 5th ACM MobiCom Workshop on Challenged Networks. Chicago, IL. September 2010.
 
-More in the [full resume PDF](/vanbesien_resume_201604.pdf).
