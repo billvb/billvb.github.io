@@ -7,7 +7,7 @@ layout: base
 
 ###### Senior Software Engineer
 
-*2019 &mdash; present*: Solved difficult problem to provide TCP-like reliability over lossy, one-way network links. Oversaw development and V&V of production-grade implementation in Rust. Published results in the proceedings of the IEEE Aerospace Conference.
+*2019 &mdash; present*: Researched and released service providing TCP-like reliability over lossy, one-way network links. Oversaw development and V&V of production-grade implementation in Rust. Published results in the proceedings of the IEEE Aerospace Conference Conference.
 
 Developed protocol for distributed consensus agreement for dynamic route selection in challenging network topology. Prototyped solution, oversaw development of production-grade solution in Rust.
 
@@ -18,21 +18,24 @@ Brought engineering rigor to product development: Distilled customer desires int
 
 ###### Lead Platform Engineer
 
-*2017 &mdash; 2019*: Designed and delivered core services for product accelerating scientific research.
-Work extensively with partners from major tech companies and academia to deliver high-quality, reproducible results.
+*2017 &mdash; 2019*:
+Designed, implemented, tested, deployed, and supported the core Gigantum product back-end to enable reproducible data science. Developed core services in Python accessible via a GraphQL API deployed in Docker containers to customer machines and AWS cloud resources.
 
-Trained software developers, established QA process, and built release and test-harness toolchains.
+Managed, mentored, and trained the QA team. Designed QA processes and oversaw the development of the Selenium-based automated test harness and its integration into the CI pipeline.
+
+Built and maintained relationships with key users and partners. Advocated for the product at conference, workshops, and seminars.
 
 
 ### Johns Hopkins University Applied Physics Lab
 
 ###### Principal Investigator, Project Manager, and Professional Staff
 
-*2008 &mdash; 2017*: Researched, developed, and integrated novel technologies into NASA space missions, including for purposes of autonomy/safety, networking, and cyber security.
+*2008 &mdash; 2017*:
+Led technical team as Principal Investigator on system supporting the safe testing of autonomy algorithms at flight test ranges. Researched model-based autonomy engines and corresponding approaches to formal verification, trained team to produce high-quality software, successfully passed all engineering milestones, and built excellent relationship with sponsors.
 
-Led software team as Principal Investigator on a product for air traffic control to ensure manned and unmanned aircraft (drones) operate safely together in the national airspace. Researched inference engines and corresponding approaches to formal verification, developed high-quality, high-reliability software for the safety-critical environment, and brought the service to operational capacity for air traffic control and flight test managers.
+Oversaw development of research and Java-based software prototype for sponsored cooperative, multi-agent fault diagnostics and remediation system as Project Manager. Managed team of post-docs, contractors, and staff to meet milestones and mature technology toward operational capability.
 
-Served as a Flight Controller during the launch and commissioning phase of the NASA Van Allen Probes mission. Acquired invaluable experience operating high-profile, mission-critical assets and being part of the multi-disciplinary, 24/7 team of engineers, analysts, and controllers. Prior to serving in this role, developed software tools in support of the NASA Messenger mission to Mercury.
+Architected, implemented, and supported cross-mission Command and Data Handling (C&DH) spacecraft flight software. Developed build process using CMake, Bash, and Linux for deployment onto mission-specific hardware platforms, such as Embedded Linux, RTEMS, and VxWorks. Implemented flight software backbone and applications in ANSI C, wrote unit tests, and supported deployment to spacecraft testbeds.
 
 
 ### Nextility
